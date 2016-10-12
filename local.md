@@ -35,6 +35,7 @@ git push -u origin master
 # view git logs, status, modify
 git log
 git log --pretty=short    # 只显示一行提交信息
+git log --oneline
 git log README.md   # 查看指定文件或目录的日志
 git log -p    # 文件的前后差异会显示在提交信息之后
 git log -p README.md    # 查看指定文件或目录的前后差异
@@ -53,8 +54,5 @@ git merge --no-ff branch-B
 git log --graph 
 
 # git reverse
-
-
-
-
+git reset --hard hashValue
 ```
