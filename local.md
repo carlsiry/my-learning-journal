@@ -47,6 +47,14 @@ git checkout branch-B   # create branch
 git branch branch-B     # switch branch
 git checkout -b branch-B    # create and switch branch
 
+# git merge
+git checkout master
+git merge --no-ff branch-B
+git log --graph 
+
+# git reverse
+
+
 
 
 ```
