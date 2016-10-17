@@ -8,3 +8,8 @@
 1. purge        vt.&n. 清除，净化，泻药
 2. trusty       adj. 可靠的，可信赖的 n.可信赖的人
 3. execute      vt. 执行，完成，处死
+
+## 10.17
+
+1. parse        vt. 解析（从语法上分析和描述）
+2. parser       n. 剖析器
