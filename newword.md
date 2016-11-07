@@ -1,4 +1,6 @@
+
 ## 10月13日
+
 1. vertical     adj.垂直的,头顶的 n.垂线，垂直位置
 2. alternative  adj.替代的，备选的 n.可供替代的事物
 3. intensive    adj.加强的，密集的，精耕集约的 n.强调成分
@@ -45,3 +47,11 @@
 2. transcript    n. 抄本，副本，打字本
 3. difinition    n. 定义，规定，解释
 4. side effect   n. 副作用
+
+## 11.5
+
+1. splice       v. 胶接；粘接，剪接
+2. slice        vt. 切片，划分; n. 薄片
+3. concat       v. 合并，连接
+4. sparse       adj. 稀疏的，缺少的
+5. underscore   vt.下划，强调；n.底线，下划线
