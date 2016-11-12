@@ -55,3 +55,8 @@
 3. concat       v. 合并，连接
 4. sparse       adj. 稀疏的，缺少的
 5. underscore   vt.下划，强调；n.底线，下划线
+
+## 11.9
+
+1.horizontal    adj.水平的，同阶层的，同一行业的；n.水平线
+2.vertical      反上
