@@ -1,4 +1,14 @@
+
 # local learning journal
+
+## 本机环境初始化为 win8.1
+
+软件版本安装为：
+- git-for-window: git version 2.10.2.windows.1
+- node: v6.2.0
+- vagrant: Vagrant 1.8.7
+- virtualbox: 5.1.8
+- python: 2.7.12
 
 ## 搬入`Github`
 
