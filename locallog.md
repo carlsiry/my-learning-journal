@@ -1,4 +1,3 @@
-
 # local learning journal
 
 ## 本机环境初始化为 win8.1
