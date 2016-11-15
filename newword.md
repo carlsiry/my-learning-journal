@@ -79,3 +79,16 @@
 13. equivalent  adj. 相等的，相当的，等效的，等价的； n. 对等物
 14. braces     n. 吊带，托架支架，括弧，箍子；v. 支撑，振作起来
 15. get one's feet wet  涉足，下海：表示初尝某事
+
+## 11.15
+
+1. spam       n. 垃圾邮件，午餐肉，香火腿，电邮广告
+2. desendant  n. 后代，弟子 adj.下降的，祖传的
+3. explicit   adj. 明确的，显式的
+4. brittle    adj.易碎的; 难以相处的，尖刻暴躁的; 冷淡的; 声音尖利的;
+5. refactor   v. 重构
+6. aggregate  n. 合计，聚合，adj.总数的，v. 使聚集
+7. correspond v. 相对应，通信，符合，一致
+8. correspond to  相当于
+9. correspond with 与……一致、对应
+10. immutability n. 不变，不变性，永恒性
