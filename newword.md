@@ -45,7 +45,8 @@
 
 1. idle          adj. 空闲的，无意义的，懒惰的；vi. 虚度
 2. transcript    n. 抄本，副本，打字本
-3. difinition    n. 定义，规定，解释
+假定，承担，假设，采取
+7. maintain     vt. 保持，保养，坚持，固执己见3. difinition    n. 定义，规定，解释
 4. side effect   n. 副作用
 
 ## 11.5
@@ -60,3 +61,21 @@
 
 1.horizontal    adj.水平的，同阶层的，同一行业的；n.水平线
 2.vertical      反上
+
+## 11.14
+
+1. encapsulate  vt. 分装，概述 vi.形成囊状物
+2. optimize    adj. 使...最优化的
+3. predictable  adj.可预见的，可预言的
+4. compose      v. 构成，组成，创作
+5. logic        n. 逻辑，推理方法，道理  adj. 逻辑的
+6. assumption   n. 假定，承担，假设，采取
+7. maintain     vt. 保持，保养，坚持，固执己见
+8. in addtion to n. 除。。。之外
+9. internal     adj. 内部的，国内的，体内的 n. 内脏，本质，本性
+10. declarative  adj.声明的，宣言的，公布的
+11. hierarchy   n. 层次，分层，等级制度
+12. lightweight adj. 轻量的，不重要的；n. 轻量级选手，不重要的人
+13. equivalent  adj. 相等的，相当的，等效的，等价的； n. 对等物
+14. braces     n. 吊带，托架支架，括弧，箍子；v. 支撑，振作起来
+15. get one's feet wet  涉足，下海：表示初尝某事
