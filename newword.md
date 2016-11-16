@@ -92,3 +92,6 @@
 8. correspond to  相当于
 9. correspond with 与……一致、对应
 10. immutability n. 不变，不变性，永恒性
+11. defect      n. 瑕疵，缺点，欠缺 v. 叛逃，背叛
+12. flip      v. 轻弹，按（开关），快速翻转（蹦蹦跳跳） n. 空翻，浏览，跳跃
+13. toggle    n. 套锁扣，切换键，转换键 v. 切换
