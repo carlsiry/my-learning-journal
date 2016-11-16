@@ -95,4 +95,19 @@
 11. defect      n. 瑕疵，缺点，欠缺 v. 叛逃，背叛
 12. flip      v. 轻弹，按（开关），快速翻转（蹦蹦跳跳） n. 空翻，浏览，跳跃
 13. toggle    n. 套锁扣，切换键，转换键 v. 切换
-14. simultaneously   adv. 同时地，一齐
+
+## 11.16
+
+1. simultaneously   adv. 同时地，一齐
+2. ad hoc   adj&adv 临时的（地） ，特别的
+3. interact  v. 互动，相互作用影响
+4. consent   v. 同意，赞成
+5. opt-out   自愿退出，不参与
+7. concatenate   v. 把（一系列事情、事件）联系起来 adj. 连接的，联系在一起的
+8. onto   prep. 到……之上，映射到……之上 adj. 映射的，自身的
+9. transition       v. 过渡，转变，变迁
+10. resume     v. 恢复，继续执行 n. 简历
+11. suspend   v. 暂停，悬，挂，延缓
+12. persistent  adj. 持久的，坚持不懈的
+13. sensible    adj. 明智的，意识到的 n. 敏感的人
+14. hint     暗示，提示
