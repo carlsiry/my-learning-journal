@@ -66,3 +66,29 @@ git log --graph
 # git reverse
 git reset --hard hashValue
 ```
+
+
+## 安装 **noder** 虚拟机
+
+```
+$ cd /
+$ mkdir noder
+$ cd noder
+$ vagrant inint ubuntu/trusty64
+$ vagrant up
+```
+
+
+## 安装 **cnpm４.４.０**包管理器　
+
+```
+$ npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
+
+## 安装 **bower**
+
+```
+$ cnpm install -g bower
+$ bower -v
+1.8.0
+```

@@ -111,3 +111,34 @@
 12. persistent  adj. 持久的，坚持不懈的
 13. sensible    adj. 明智的，意识到的 n. 敏感的人
 14. hint     暗示，提示
+15. pipeline   n. 管道，渠道，传递路径 v. 运输，传递
+
+## 11.17
+
+1. hood         n. 兜帽，头巾，引擎早、引擎罩  v. 罩上，覆盖
+2. commemorative  adj. 纪念的，纪念性的 n. 纪念品
+3. clutter    n. 杂乱 vt. 使凌乱
+4. palette    n. 调色板，颜料
+
+## 11.23
+
+1. sparingly    adv. 保守地，节约地，仁慈地
+2. relatively   adv. 相对地，关系上地，比较地
+3. embed        v. 把……嵌入，栽种，深留（记忆中）
+4. mandatory    adj. 强制的，命令的 n. 受托者
+5. pitfalls     n. 陷阱，想不到的困难，易犯的错误
+6. literal     adj. 照字面的，原义的，逐字的，平实的
+7. literals     n. 常量
+8. curly       adj. 有卷发的，蜷缩的，有邹传纹理的
+9. curly brace  n. 括弧号， 大括号
+10. caveat     n. 警告，附加说明
+11. camelCase   n. 驼峰标记法
+12. injection   n. 注入， 注射
+13. identical   adj. 同一的，相同的 n. 完全相同的事物
+
+## 11.24
+
+1. integrate   v. 使一体化，使完整，使整合 adj. 整体的，完整的，综合的
+2. isolate     v. 使隔离，使孤立
+3. immutable   adj. 不可变的
+4. eliminate   vt. 淘汰，消除，排除

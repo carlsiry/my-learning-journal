@@ -63,4 +63,3 @@ git config --global color.ui auto
 ```
 
 - rollback to **10.15**
-
