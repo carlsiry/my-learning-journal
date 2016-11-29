@@ -142,3 +142,15 @@
 2. isolate     v. 使隔离，使孤立
 3. immutable   adj. 不可变的
 4. eliminate   vt. 淘汰，消除，排除
+5. deprecate   vt. 不赞成， 反对
+6. asset       n. 资产，财产，有价值的人或物，有用的东西，优点
+7. chunk       n. 厚厚的一块，数据块（计算机中）
+8. extraneous  adj. 无关的，外部的，不相干的
+9. leverage    n. 杠杆作用，优势，力量，影响 v. 举债经营
+10. leverages  v. 促使……改变，利用
+11. intuitive  adj. 直观的，直觉的
+12. dramatically adv. 戏剧性地，引人注目地（大幅）
+
+
+
+

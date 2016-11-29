@@ -2,25 +2,25 @@
 [TOC]
 
 ---
+### 遗留问题
 
-## 十二周（11.21~11.27）
-
-1. React.js 小练习项目（tutorial-40M，finish-2H）
-2. Node.js —— ~~**使用 Buffer 类处理二进制数据**~~，操作文件系统（7-10H）
-3. 软技能 —— 职业篇（2H）
-4. ES6 —— ~~**数组扩展**~~，**函数扩展，对象扩展，Symbol，Proxy&&Reflect
+1. gulp 构建工具
+2. Node.js —— 操作文件系统（7-10H）
+3. Es6 —— Proxy&&Reflect
+4. React.js Docs ——  components and props
 5. 横扫JS高程 —— 到第三章
-6. React.js Docs —— ~~**Rendering Elements**~~, components and props
+
 
 ---
 
 ## 十三周 （）
 
 1. Node.js —— TCP 与 UDP 数据通信
-2. ES6 —— 二进制数组，数据结构，迭代器，异步函数，Promise对象
+2. ES6 —— （**遗留**：二进制数组），数据结构，迭代器，异步函数，Promise对象
 3. 软技能 —— 自我营销
 4. 横扫JS高程 —— 到第五章
 5. React.js Docs —— states lifecycle, handling events, conditional rendering
+6. jQuery —— selector, attribute, style, node, event, animate
 
 ---
 
@@ -65,7 +65,20 @@
 
 1. Node.js —— 数据库访问，Express，综合案例
 2. 软技能 —— 精神
+3. React.js 小练习项目（tutorial-40M，finish-2H）
 4. 横扫JS高程 —— 事件，表单
 5. DOM 编程艺术
+
+---
+
+## ~~十二周（11.21~11.27）~~
+
+1. gulp 构建工具
+2. Node.js —— ~~**使用 Buffer 类处理二进制数据**~~，操作文件系统（7-10H）
+3. 软技能 —— ~~**职业篇（2H）**~~
+4. ES6 —— ~~**数组扩展**~~，~~**函数扩展**~~，~~**对象扩展**~~，~~**Symbol**~~，Proxy&&Reflect
+5. 横扫JS高程 —— 到第三章
+6. React.js Docs —— ~~**Rendering Elements**~~, components and props
+7. Vue.js Docs —— ~~**处理用户输入**~~，~~**用组件构建（应用）与自定义元素的关系**~~
 
 ---
