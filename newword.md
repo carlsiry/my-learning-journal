@@ -152,5 +152,23 @@
 12. dramatically adv. 戏剧性地，引人注目地（大幅）
 
 
+## 12.01
 
+1. trigger    v. 引发，触发，扣……扳机 n. 扳机，扳柄
+2. conceptually  adv. 概念地，概念上
+3. arbitrary  adj. 随意任性的，主观武断的; 霸道专制的，专横的
+4. conciseness  n. 简洁，简明
+5. encounter   v. 遭遇，对抗， 不期而遇； n. 相遇，碰见，对决
+6. extract     v. 提取，选取，获得
+7. duration    n. 持续，连续，持续时间，音延
+
+## 12.03
+
+1. velocity    n. 高速，快速，速率
+2. opacity     n. 不透明性，模糊，难懂
+3. collapse    v. 崩溃，倒塌，坐下，瓦解倒塌 n.垮台,（身体）衰弱
+
+## 12.04
+
+1. preface    n. 序言，引语 v. 给……作序，导致
 
