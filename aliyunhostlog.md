@@ -15,6 +15,8 @@ ssh -T git@github.com
 # config shell
 git clone git@github.com:littlecarson/mydotfiles.git
 cd mydotfiles
-git submodule updata --init
+git submodule update --init
 bash bootstrap.sh
 ```
+
+### 12.10 回滚到 10.18
