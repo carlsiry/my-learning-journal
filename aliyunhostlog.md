@@ -20,3 +20,97 @@ bash bootstrap.sh
 ```
 
 ### 12.10 回滚到 10.18
+
+自定义镜像 ——微信卡尔僧
+
+### 12.11 系统盘初始化到 ubuntu 14
+
+```
+# update pakage source lists
+$ apt-get update
+```
+
+- **install nginx 10.02**
+
+```
+# download nginx_signing key
+wget http://nginx.org/keys/nginx_signing.key
+
+# add nginx_singning key to the apt program keyring
+sudo apt-get add nginx_signing.key
+
+# view system's code name (ubuntu14.04: trusty)
+lsb_release -c
+
+# add nginx source to '/etc/apt/sources.list'
+$ echo "deb http://nginx.org/packages/ubuntu/ trusty nginx" >> /etc/apt/sources.list
+$ echo "deb-src http://nginx.org/package/ubuntu/ trusty nginx" >> /etc/apt/sources.list
+
+# install nginx
+apt-get update
+apt-get install nginx
+
+# view nginx status
+$ service nginx start
+$ service nginx status
+```
+
+- **install curl**
+
+```
+$ apt-get install curl
+$ curl -S '127.0.0.1'
+```
+
+- **instal git **
+
+`sudo apt-get install git`
+
+```
+# git config
+git config --global user.name Carson
+git config --global user.email chenkansheng0@163.com
+git config --global color.ui auto
+
+# config SSH key
+ssh-keygen -t rsa -C chenkansheng0@163.com
+cat ~/.ssh/id_rsa.pub   # copy to github > settings > ssh and GPA keys
+
+# authenticated
+ssh -T git@github.com
+
+```
+
+- **回滚 2016.10.18**
+
+- **安装 Node 基本环境**
+
+```
+# clean
+rm -rf $HOME/.nvm
+sed -i '/nvm/d' $HOME/.bashrc
+
+# clone nvm
+cd ~
+git clone https://github.com/creationix/nvm.git .nvm
+cd .nvm
+git checkout 'v0.32.1'
+
+# activate nvm
+echo "export NVM_NODEJS_ORG_MIRROR=http://npm.taobao.org/mirrors/node" >> $HOME/.bashrc
+echo ". $HOME/.nvm/nvm.sh" >>  $HOME/.bashrc
+source $HOME/.bashrc
+
+# config node
+nvm install node
+nvm install v6.9.2
+nvm alias default v6.9.2
+
+# speedup node modules with native bindings
+npm install -g node-gyp-install --registry=http://registry.npm.taobao.org
+
+# update npm 2 latest
+npm set registry=http://registry.npm.taobao.org
+node-gyp-install
+npm install -g pm2 webpack gulp
+```
