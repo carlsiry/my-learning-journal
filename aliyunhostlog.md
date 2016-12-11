@@ -114,3 +114,24 @@ npm set registry=http://registry.npm.taobao.org
 node-gyp-install
 npm install -g pm2 webpack gulp
 ```
+
+- express
+
+```
+$ npm install -g express-generator
+$ express jswechat
+$ vim /etc/nginx/conf.d/default.conf
+vim:
+    server {
+        location ~ ^/wechat/.+ {
+            proxy_pass http://127.0.0.1:3000;
+        }
+    }
+
+
+# pm2 kill daemon
+pm2 kill
+# pm2 start
+pm2 start bin/www --watch
+DEBUG=* pm2 start bin/www --watch
+```
