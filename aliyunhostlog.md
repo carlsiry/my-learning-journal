@@ -135,3 +135,42 @@ pm2 kill
 pm2 start bin/www --watch
 DEBUG=* pm2 start bin/www --watch
 ```
+
+
+### 12.12 
+
+- **安装 mongodb 3.2**
+
+```
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+
+echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list
+
+apt-get update
+
+apt-get install -y mongodb-org
+
+# 启动MongoDB
+service mongod start
+# 查看服务状态
+service mongod status
+
+# 远程连接配置
+vim /etc/mongod.conf
+vim: #bind_ip 127.0.0.1 监听所有外网ip
+```
+
+- **Python 下使用 PyMongo**
+
+```
+pip install pymongo
+
+# 安装GUN C compiler（GCC）（使用MongoDB的C扩展）
+apt-get install build-essential python-dev
+
+# 验证安装
+python
+> import pymongo
+```
+
+- **Python 安装 python3-pip**：`apt-get install python3-pip`
