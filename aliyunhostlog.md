@@ -4,6 +4,7 @@
 ## 镜像快照恢复到 ** 微信卡尔森里 ** —— 2016.10.18.am
 
 ### 10.18 
+
 ```
 # setting ssh key
 ssh-keygen -t rsa -C chenkansheng0@163.com
