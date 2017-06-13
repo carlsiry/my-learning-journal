@@ -4,9 +4,9 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-    "start": "gitbook serve . ./gh-pages",
-    "build": "gitbook build . ./gh-pages",
-    "deploy": "node ./scripts/deploy-gh-pages.js",
+    "start": "gitbook serve ./content ./gh-pages",
+    "build": "gitbook build ./content ./gh-pages",
+    "deploy": "node ./script/deploy-gh-pages.js",
     "publish": "npm run build && npm run deploy",
     "port": "lsof -i :35729"
   },
