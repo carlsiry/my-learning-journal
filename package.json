@@ -4,11 +4,11 @@
   "description": "",
   "main": "test.js",
   "scripts": {
-   "start": "gitbook serve ./content ./gh-pages",
-   "build": "gitbook build ./content ./gh-pages",
-   "deploy": "node ./scripts/deploy-gh-pages.js",
-   "publish": "npm run build && npm run deploy",
-   "port": "lsof -i :35729"
+    "start": "gitbook serve . ./gh-pages",
+    "build": "gitbook build . ./gh-pages",
+    "deploy": "node ./scripts/deploy-gh-pages.js",
+    "publish": "npm run build && npm run deploy",
+    "port": "lsof -i :35729"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/littlecarson/my-learning-journal/issues"
   },
-  "homepage": "https://github.com/littlecarson/my-learning-journal#readme"
+  "homepage": "https://github.com/littlecarson/my-learning-journal#readme",
+  "dependencies": {
+    "gh-pages": "^1.0.0"
+  }
 }
