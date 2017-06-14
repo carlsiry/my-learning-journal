@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>i_dont_know_py · GitBook</title>
+        <title>noderlog · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="locallog.html" />
+    <link rel="next" href="myplan.html" />
     
     
-    <link rel="prev" href="aliyunhostlog.html" />
+    <link rel="prev" href="must.html" />
     
 
     </head>
@@ -245,7 +245,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="i_dont_know_py.html">
+        <li class="chapter " data-level="1.3.3" data-path="i_dont_know_py.html">
             
                 <a href="i_dont_know_py.html">
             
@@ -284,7 +284,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="noderlog.html">
+        <li class="chapter active" data-level="1.3.6" data-path="noderlog.html">
             
                 <a href="noderlog.html">
             
@@ -455,7 +455,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >i_dont_know_py</a>
+        <a href=".." >noderlog</a>
     </h1>
 </div>
 
@@ -470,185 +470,58 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x6211;&#x4E0D;&#x77E5;&#x9053;&#x7684;-python">&#x6211;&#x4E0D;&#x77E5;&#x9053;&#x7684; <strong>Python</strong></h2>
-<p>&#x8BB0;&#x5F55;&#x4E00;&#x4E9B;&#x8DDF;&#x6211;&#x5E73;&#x5E38;&#x6BD4;&#x8F83;&#x964C;&#x751F;&#x7684; <strong>Python</strong> &#x7528;&#x6CD5;&#x3002;</p>
-<h3 id="&#x81EA;&#x6587;&#x6863;&#x5316;&#x7684;-python-&#x8BED;&#x8A00;">&#x81EA;&#x6587;&#x6863;&#x5316;&#x7684; <strong>Python</strong> &#x8BED;&#x8A00;</h3>
-<p>&#x4E00;&#x76F4;&#x4EE5;&#x6765;&#x90FD;&#x5FFD;&#x89C6;&#x4E86;&#x8FD9;&#x95E8;&#x8BED;&#x8A00;&#x7684;&#x4E00;&#x53CB;&#x597D;&#x6027;&#xFF0C;<strong>Python</strong> &#x5BF9;&#x5927;&#x591A;&#x51FD;&#x6570;&#x548C;&#x6A21;&#x5757;&#x90FD;&#x81EA;&#x5E26;&#x7B80;&#x77ED;&#x7684;&#x89E3;&#x91CA;&#x6587;&#x6863;&#xFF0C;&#x53EF;&#x4EE5;&#x7701;&#x4E0B;&#x53BB;&#x7F51;&#x4E0A;&#x67E5;&#x9605;&#x6587;&#x6863;&#x548C;&#x4E66;&#x7C4D;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x771F;&#x7684;&#x662F;&#x975E;&#x5E38;&#x7684;&#x65B9;&#x4FBF;&#x3002;</p>
+                                <h1 id="vitrual-machine-noder-log">vitrual machine noder log</h1>
+<h2 id="20161015">2016.10.15</h2>
 <ul>
-<li>&#x5217;&#x51FA;&#x6A21;&#x5757;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x51FD;&#x6570;&#x2014;&#x2014; <code>dir()</code></li>
+<li><p>install nvm </p>
+<pre><code>curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash
+# active nvm 
+source ~/.nvm/nvm.sh
+</code></pre></li>
+<li><p>setting locale</p>
+<pre><code>vim /etc/default/locale&apos;, LC_ALL=&quot;en_US.UTF-8&quot;
+</code></pre></li>
+<li><p>modify hostname</p>
+<pre><code>vim /etc/hostname &gt; vagrant
+</code></pre></li>
+<li><p>install latest node.js</p>
+<pre><code>nvm install node
+# switch node version
+nvm use node
+# install cnpm
+npm install -g cmpm
+# install es-checker
+cnpm install -g es-checker
+</code></pre></li>
 </ul>
-<pre><code>&gt;&gt;&gt; import math
-&gt;&gt;&gt; dir(math)
-[&apos;__doc__&apos;, &apos;__name__&apos;, &apos;__package__&apos;, &apos;acos&apos;, &apos;acosh&apos;, &apos;asin&apos;, &apos;asinh&apos;, 
-&apos;atan&apos;, &apos;atan2&apos;, &apos;atanh&apos;, &apos;ceil&apos;, &apos;copysign&apos;, &apos;cos&apos;, &apos;cosh&apos;, &apos;degrees&apos;, &apos;e&apos;, 
-&apos;erf&apos;, &apos;erfc&apos;, &apos;exp&apos;, &apos;expm1&apos;, &apos;fabs&apos;, &apos;factorial&apos;, &apos;floor&apos;, &apos;fmod&apos;, &apos;frexp&apos;, 
-&apos;fsum&apos;, &apos;gamma&apos;, &apos;hypot&apos;, &apos;isinf&apos;, &apos;isnan&apos;, &apos;ldexp&apos;, &apos;lgamma&apos;, &apos;log&apos;, &apos;log10&apos;, 
-&apos;log1p&apos;, &apos;modf&apos;, &apos;pi&apos;, &apos;pow&apos;, &apos;radians&apos;, &apos;sin&apos;, &apos;sinh&apos;, &apos;sqrt&apos;, &apos;tan&apos;, &apos;tanh&apos;, 
-&apos;trunc&apos;]
+<h2 id="20161016">2016.10.16</h2>
+<pre><code># import the public key used by the package management system
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
+# Create a /etc/apt/sources.list.d/mongodb-enterprise.list file for MongoDB
+echo &quot;deb http://repo.mongodb.com/apt/ubuntu trusty/mongodb-enterprise/3.2 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-enterprise.list
+# Reroad package database
+sudo apt-get update
+# install the MongoDB Enterprise packages
+sudo apt-get install -y mongodb-enterprise
+# pin version
+echo &quot;mongodb-enterprise hold&quot; | sudo dpkg --set-selections
+echo &quot;mongodb-enterprise-server hold&quot; | sudo dpkg --set-selections
+echo &quot;mongodb-enterprise-shell hold&quot; | sudo dpkg --set-selections
+echo &quot;mongodb-enterprise-mongos hold&quot; | sudo dpkg --set-selections
+echo &quot;mongodb-enterprise-tools hold&quot; | sudo dpkg --set-selections
+</code></pre><h2 id="1116-system-rollback-init">11.16 system rollback init</h2>
+<pre><code>## system init
+ubuntu 14 ltf
+
+## install git 
+sudo apt-get install git
+git confit --global user.name Carson
+git config --global user.email chenkansheng0@163.com
+git config --global color.ui auto
 </code></pre><ul>
-<li>&#x67E5;&#x770B;&#x5B8C;&#x6574;&#x7684; <strong>Python</strong> &#x5185;&#x7F6E;&#x51FD;&#x6570;&#x6E05;&#x5355;</li>
+<li>rollback to <strong>10.15</strong></li>
 </ul>
-<p><code>&gt;&gt;&gt; dir(__builtins__)</code></p>
-<ul>
-<li>&#x67E5;&#x770B;&#x6A21;&#x5757;&#x6216;&#x51FD;&#x6570;&#x7684;&#x6587;&#x6863;&#x5B57;&#x7B26;&#x4E32;</li>
-</ul>
-<pre><code># &#x67E5;&#x770B;math&#x6A21;&#x5757;&#x7684;&#x5E2E;&#x52A9;&#x6587;&#x6863;
-&gt;&gt;&gt; help(math)
-# &#x67E5;&#x770B;&#x5177;&#x4F53;&#x5230;&#x51FD;&#x6570;&#x7684;&#x5E2E;&#x52A9;&#x6587;&#x6863;
-&gt;&gt;&gt; help(math.log)
-</code></pre><ul>
-<li>&#x6253;&#x5370;&#x6587;&#x6863;&#x5B57;&#x7B26;&#x4E32;</li>
-</ul>
-<pre><code>&gt;&gt;&gt; print (math.__doc__)
-This module is always available.  It provides access to the
-mathematical functions defined by the C standard.
 
-&gt;&gt;&gt; print (math.log.__doc__)
-log(x[, base])
-
-Return the logarithm of x to the given base.
-If the base not specified, returns the natural logarithm (base e) of x.
-</code></pre><ul>
-<li>&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x6863;&#x5B57;&#x7B26;&#x4E32;</li>
-</ul>
-<pre><code>def area(radius):
-    &quot;&quot;&quot;Returns the area of a circle with given radius.
-    For example:
-    &gt;&gt;&gt; area(2)
-    12.566370614359172
-    &quot;&quot;&quot;
-    return math.pi * radius ** 2
-
-print area.__doc__
-</code></pre><h3 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;">&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h3>
-<p><strong>Python</strong> &#x4F7F;&#x7528;&#x5185;&#x5EFA;&#x51FD;&#x6570;&#x6765;&#x7B80;&#x5316;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x8FD9;&#x4E00;&#x5DE5;&#x4F5C;&#x3002;<em>&#x6CE8;&#x610F;&#xFF1A;2.x&#x7248;&#x672C;&#x8DDF;3.x&#x7248;&#x672C;&#x6709;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x5730;&#x65B9;&#x3002;</em></p>
-<ul>
-<li>&#x6574;&#x6570;&#x3001;&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6D6E;&#x70B9;&#x6570;&#x4E4B;&#x95F4;&#x7684;&#x8F6C;&#x6362;</li>
-</ul>
-<pre><code># Python 2.7.6 &#x73AF;&#x5883;&#x4E0B;
-# &#x8F6C;&#x6362;&#x4E3A;&#x6D6E;&#x70B9;&#x6570;
-&gt;&gt;&gt; float(3)
-3.0
-&gt;&gt;&gt; float(&apos;3&apos;)
-3.0
-&gt;&gt;&gt; float(&apos;3.2&apos;)
-3.2
-
-# &#x8F6C;&#x6362;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;
-&gt;&gt;&gt; str(0)
-&apos;0&apos;
-&gt;&gt;&gt; str(1.2)
-&apos;1.2&apos;
-
-# &#x8F6C;&#x6362;&#x4E3A;&#x6574;&#x6570;
-&gt;&gt;&gt; int(3.8)
-3
-&gt;&gt;&gt; int(&apos;3&apos;)
-3
-&gt;&gt;&gt; int(&apos;3.1&apos;)
-Traceback (most recent call last):
-  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
-ValueError: invalid literal for int() with base 10: &apos;3.1&apos;
-</code></pre><ul>
-<li>&#x5706;&#x6574;&#xFF08;&#x603B;&#x662F;&#x5411;&#x4E0A;&#x5706;&#x6574;&#x5E26;&#x6765;&#x7684;&#x504F;&#x5DEE;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x8BA1;&#x7B97;&#x4E0D;&#x51C6;&#x786E;&#xFF0C;&#x6240;&#x4EE5; <strong>3.x</strong>&#x5706;&#x6574;&#x5230;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x5076;&#x6570;&#xFF09;</li>
-</ul>
-<pre><code>&gt;&gt;&gt; round(2.1)
-2
-&gt;&gt;&gt; round(2.5)
-2
-
-&gt;&gt;&gt; round(3.1)
-3
-&gt;&gt;&gt; round(3.5)
-4
-</code></pre><h3 id="&#x8D4B;&#x503C;">&#x8D4B;&#x503C;</h3>
-<ul>
-<li>&#x591A;&#x91CD;&#x8D4B;&#x503C;&#xFF08;<strong>JavaScript</strong> &#x4E2D;&#x89E3;&#x6784;&#x8D4B;&#x503C;&#xFF09;</li>
-</ul>
-<pre><code>&gt;&gt;&gt; a, b, c = &apos;a&apos;, &apos;b&apos;, &apos;c&apos;
-&gt;&gt;&gt; a
-&apos;a&apos;
-&gt;&gt;&gt; b
-&apos;b&apos;
-</code></pre><ul>
-<li>&#x4EA4;&#x6362;&#x53D8;&#x91CF;&#x7684;&#x503C;</li>
-</ul>
-<pre><code>&gt;&gt;&gt; a, b = 2, 5
-&gt;&gt;&gt; a
-2
-&gt;&gt;&gt; a, b = b, a
-&gt;&gt;&gt; a
-5
-</code></pre><h3 id="3x&#x7248;&#x672C;&#x4E2D;&#x7684;input&#x51FD;&#x6570;&#x4E0E;2x&#x7248;&#x672C;&#x533A;&#x522B;">3.x&#x7248;&#x672C;&#x4E2D;&#x7684;input&#x51FD;&#x6570;&#x4E0E;2.x&#x7248;&#x672C;&#x533A;&#x522B;</h3>
-<ul>
-<li>3.x &#x4E2D;&#x7684; <strong>input</strong>&#x5BF9;&#x5E94;&#x4E8E;2.x&#x4E2D;&#x7684; <strong>raw_input</strong>&#x51FD;&#x6570;</li>
-</ul>
-<pre><code># 2.7 test.py
-name = raw_input(&apos;enter your name:&apos;).strip().capitalize()
-print &apos;Hello &apos; + name
-$ python test.py
-enter your name:         Carson chen
-Hello Carson chen
-</code></pre><ul>
-<li>2.x &#x4E2D;&#x7684; <strong>input</strong> &#x51FD;&#x6570;&#xFF0C;&#x5BF9;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6C42;&#x503C;</li>
-</ul>
-<pre><code># 2.7 test.py
-name = input(&apos;enter your name:&apos;).strip().capitalize()
-print &apos;Hello &apos; + name
-$ python test.py
-enter your name:Carson
-Traceback (most recent call last):
-  File &quot;test.py&quot;, line 1, in &lt;module&gt;
-    name = input(&apos;enter your name:&apos;)
-  File &quot;&lt;string&gt;&quot;, line 1, in &lt;module&gt;
-NameError: name &apos;Carson&apos; is not defined
-</code></pre><h3 id="&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x5173;">&#x5B57;&#x7B26;&#x4E32;&#x76F8;&#x5173;</h3>
-<ul>
-<li>&#x8D1F;&#x6570;&#x7D22;&#x5F15;</li>
-</ul>
-<pre><code>&gt;&gt;&gt; str = &apos;abc&apos;;
-&gt;&gt;&gt; str[-1]
-&apos;c&apos;
-&gt;&gt;&gt; str[-3]
-&apos;a&apos;
-</code></pre><ul>
-<li>&#x67E5;&#x770B;&#x5B57;&#x7B26;&#x7F16;&#x7801;&#xFF1A;<code>ord(char)</code></li>
-</ul>
-<pre><code>&gt;&gt;&gt; ord(&apos;a&apos;)
-97
-&gt;&gt;&gt; ord(&apos;b&apos;)
-98
-</code></pre><ul>
-<li>&#x67E5;&#x770B;&#x7F16;&#x7801;&#x5B57;&#x7B26;&#xFF1A;<code>chr(number)</code></li>
-</ul>
-<pre><code>&gt;&gt;&gt; chr(97)
-&apos;a&apos;
-&gt;&gt;&gt; chr(98)
-&apos;b&apos;
-</code></pre><p><strong>&#x6709;&#x59CB;&#xFF08;2016.11.4&#xFF09;&#x6709;&#x7EC8;</strong></p>
-<h2 id="&#x903B;&#x8F91;&#x884C;&#x4E0E;&#x7269;&#x7406;&#x884C;">&#x903B;&#x8F91;&#x884C;&#x4E0E;&#x7269;&#x7406;&#x884C;</h2>
-<pre><code># &#x903B;&#x8F91;&#x884C;&#xFF1A;&#x903B;&#x8F91;&#x4E0A;&#x7684;&#x610F;&#x601D;&#x7684;&#x884C;&#x6570;
-# &#x4E00;&#x4E2A;&#x903B;&#x8F91;&#x884C;&#x8DE8;&#x8D8A;&#x591A;&#x4E2A;&#x7269;&#x7406;&#x884C;&#x65F6;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x884C;&#x8FDE;&#x63A5;
-print &apos;abc&apos;;print &apos;123&apos;;print &apos;def&apos;
-print &quot;we are \
-family&quot;
-print  &quot;It&apos;s very nice &quot; \
-       &quot;of you&quot;
-
-# &#x7269;&#x7406;&#x884C;&#xFF1A;&#x5B9E;&#x9645;&#x4E0A;&#x7684;&#x770B;&#x5230;&#x7684;&#x884C;&#x6570;&#x3002;
-# &#x4E00;&#x4E2A;&#x7269;&#x7406;&#x884C;&#x4E00;&#x822C;&#x53EF;&#x4EE5;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x903B;&#x8F91;&#x884C;
-# &#x4E00;&#x4E2A;&#x7269;&#x7406;&#x884C;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x903B;&#x8F91;&#x884C;&#x7528;&#x5206;&#x53F7;&#x9694;&#x5F00;
-print &apos;a&apos;
-print &apos;abc&apos;;print &apos;123&apos;;print &apos;def&apos;
-
-# &#x5B9E;&#x4F8B;&#xFF1A;1&#x4E2A;&#x7269;&#x7406;&#x884C;&#xFF0C;3&#x4E2A;&#x903B;&#x8F91;&#x884C;
-print &apos;abc&apos;;print &apos;123&apos;;print &apos;def&apos;
-
-# &#x5B9E;&#x4F8B;&#xFF1A;1&#x4E2A;&#x903B;&#x8F91;&#x884C;&#xFF0C;3&#x4E2A;&#x7269;&#x7406;&#x884C;
-print &apos;&apos;&apos;&#x8FD9;&#x91CC;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x7269;&#x7406;&#x884C;
-&#x8FD9;&#x91CC;&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x7269;&#x7406;&#x884C;
-&#x8FD9;&#x91CC;&#x662F;&#x7B2C;&#x4E09;&#x4E2A;&#x7269;&#x7406;&#x884C;&apos;&apos;&apos;
-</code></pre>
                                 
                                 </section>
                             
@@ -675,12 +548,12 @@ print &apos;&apos;&apos;&#x8FD9;&#x91CC;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x7269;
 
             
                 
-                <a href="aliyunhostlog.html" class="navigation navigation-prev " aria-label="Previous page: aliyunhostlog">
+                <a href="must.html" class="navigation navigation-prev " aria-label="Previous page: must">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="locallog.html" class="navigation navigation-next " aria-label="Next page: locallog">
+                <a href="myplan.html" class="navigation navigation-next " aria-label="Next page: myplan-2016">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -691,7 +564,7 @@ print &apos;&apos;&apos;&#x8FD9;&#x91CC;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x7269;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"i_dont_know_py","level":"1.3.3","depth":2,"next":{"title":"locallog","level":"1.3.4","depth":2,"path":"2016/locallog.md","ref":"./2016/locallog.md","articles":[]},"previous":{"title":"aliyunhostlog","level":"1.3.2","depth":2,"path":"2016/aliyunhostlog.md","ref":"./2016/aliyunhostlog.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2016/i_dont_know_py.md","mtime":"2017-06-13T12:55:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-14T01:20:51.262Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"noderlog","level":"1.3.6","depth":2,"next":{"title":"myplan-2016","level":"1.3.7","depth":2,"path":"2016/myplan.md","ref":"./2016/myplan.md","articles":[]},"previous":{"title":"must","level":"1.3.5","depth":2,"path":"2016/must.md","ref":"./2016/must.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2016/noderlog.md","mtime":"2017-06-13T12:55:03.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-14T01:20:51.262Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
