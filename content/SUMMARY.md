@@ -14,7 +14,8 @@
   - [i_dont_know_py](./2016/i_dont_know_py.md)
   - [locallog](./2016/locallog.md)
   - [must](./2016/must.md)
-  - [noderlog](./noderlog.md)
+  - [noderlog](./2016/noderlog.md)
+  - [myplan-2016](./2016/myplan.md)
   * daily
     - [16-01-01](./2016/daily/01-01.md)
     - [16-01-02](./2016/daily/01-02.md)
