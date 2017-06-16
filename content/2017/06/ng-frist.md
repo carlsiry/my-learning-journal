@@ -149,3 +149,25 @@ class ProductItemComponent {
   }
 }
 ```
+
+
+6. HTTP 库
+
+Angular 封装了一个异步请求的 HTTP 库（*单独的模块*），用来调用外部的 API。
+并且推荐使用 *可观察对象* 的方式来处理这中异步请求代码。
+
+- 导入使用
+
+```
+// 0. 导入 依赖模块 到 NgModule
+import { HttpModule }  from '@angular/http';
+@NgModule({
+  //...
+  imports:[ BrowserModule, HttpModule ],
+  // bootstrap
+  // providers
+})
+
+// 1. 导入 依赖
+import { Http, Response, RequrestOptions, Headers } from '@angular/http';
+```
