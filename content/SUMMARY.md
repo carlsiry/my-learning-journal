@@ -12,6 +12,7 @@
     - [17-06-14](./2017/daily/17-06-14.md)
     - [17-06-15](./2017/daily/17-06-15.md)
     - [17-06-16](./2017/daily/17-06-16.md)
+    - [17-06-17](./2017/daily/17-06-17.md)
 * 2016 年
   - [用Vagrant搭建运行环境](./2016/Build-Environment-by-Vagrant.md)
   - [aliyunhostlog](./2016/aliyunhostlog.md)
