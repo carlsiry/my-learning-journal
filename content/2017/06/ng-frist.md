@@ -3,15 +3,20 @@
 
 1. 搭建本地开发环境
 
+  使用官方提供的命令行工具：**angular-cli**， 以方便我们快速创建工程、启动工程、编译调试等工作。
+
 ```
 # typescript support
 > npm install -g typescript
+
 # sublime text ts plugin
 # command + shift + p : typescript
+
 # install tool
 > npm install -g @angular/cli
 # config package managerment
 > ng set --global packageManager=yarn
+
 # create new projectName
 > ng new angular2-hello-world
 # run debug/test
@@ -23,12 +28,17 @@
 ```
 # create component cli command
 > ng generate component hello-world
+# 简写：ng g c hello-world
 installing component
   create src/app/hello-world/hello-world.component.css
   create src/app/hello-world/hello-world.component.html
-  create src/app/hello-world/hello-world.component.spec.ts
+  create src/app/hello-world/hello-world.component.spec.ts    // 测试文件
   create src/app/hello-world/hello-world.component.ts
   update src/app/app.module.ts
+
+# create inline-template inline-style component
+> ng generate component hello-world --inline-template --inline-style
+# 简写：ng g c hello-world -it -is
 
 # define hello-world.compoent.ts
 // 1. annotation just like decorate
