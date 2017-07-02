@@ -3,6 +3,7 @@
 * [Introduction](COVER.md)
 * 2017 年
   * 07 月
+    - [plans](./2017/07/plans.md)
     - [learn-mongodb-with-py3](./2017/07/learn-mongodb-with-py3.md)
   * 06 月
     - [fundation](./2017/06/fundation.md)

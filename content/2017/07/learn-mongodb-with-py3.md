@@ -15,11 +15,11 @@
 
 ### Checkout
 
-- [Setup & Uninstall on Ubuntu](#setup-uninstall-on-ubuntu)
+- [Setup and Uninstall on Ubuntu](#setup-and-uninstall-on-ubuntu)
 - [Setup on MacOS](#setup-on-macos)
-- [Python 中使用 MongoDB](#python-mongodb)
+- [Using with pymongo in Python](#using-with-pymongo-in-python)
 
-## Setup & Uninstall on Ubuntu
+## Setup and Uninstall on Ubuntu
 
 ```
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
@@ -85,7 +85,9 @@ brew install mongodb
 mongod --config /usr/local/etc/mongod.conf
 ```
 
-## Python 中使用 MongoDB
+## Using with pymongo in Python
+
+PyMongo模块是Python对MongoDB操作的接口包，代码主要实现对MongoDB的几种操作：增删改查以及排序等功能。
 
 ### Install PyMongo
 
@@ -99,11 +101,11 @@ apt-get install python3-pip
 apt-get install build-essential python-dev
 
 # 验证安装
-python
+$ python
 > import pymongo
 ```
 
-### 基本使用
+### Basic Operater
 
 ```
 # coding=utf-8
@@ -125,20 +127,29 @@ stu_dic = {'name': 'carson', 'age': 23, 'sex': 'male'}
 collection.insert(stu_dic)
 
 # 查询集合中的所有数据
-stu_all = colection.find() # 此处content是一个pymongo对象
+stu_all = collection.find() # stu_all: []
 for each in stu_all:
     print(each['name'])
 
-# 查询指定的文档
+# 查询指定的文档 (指定字段、多字段(and)、or、>=<=、)
 content = col.find({'age': 29}) # 此处content是一个pymongo对象
 content = col.find_one({'age': 23})
 
+# 排序
+
 # 更新指定的数据
-collection.update({'name': 'carson'}, {'age': 18})
-collection.update_one({'age': 20}, {'$set':{'name': 'kingname'}})
-collection.update_many({'age': 20}, {'$set':{'age': 30}})
+  # 更新第一条匹配的数据的所有字段，未指定为空
+  collection.update({'name': 'carson'}, {'age': 18})
+  # 更新第一条匹配的数据的指定字段
+  collection.update_one({'age': 20}, {'$set':{'name': 'kingname'}})
+  # 更新所有匹配的数据的指定字段
+  collection.update_many({'age': 20}, {'$set':{'age': 30}})
 
 # 删除指定数据
 collection.delete_one({'name': 'kingname'})
 collection.delete_many({'name': 'carson'})
+
+# 更详细资料文档
+http://api.mongodb.com
+https://docs.mongodb.com/getting-started/python/client/
 ```
