@@ -2,6 +2,8 @@
 
 * [Introduction](COVER.md)
 * 2017 年
+  * 07 月
+    - [learn-mongodb-with-py3](./2017/07/learn-mongodb-with-py3.md)
   * 06 月
     - [fundation](./2017/06/fundation.md)
     - [ng-frist](./2017/06/ng-frist.md)
@@ -9,11 +11,13 @@
     - [reset_css_explain.md](./2017/06/reset_css_explain.md)
     - [semantic](./2017/06/semantic.md)
   * daily
-    - [17-06-14](./2017/daily/17-06-14.md)
-    - [17-06-15](./2017/daily/17-06-15.md)
-    - [17-06-16](./2017/daily/17-06-16.md)
-    - [17-06-17](./2017/daily/17-06-17.md)
+    - [17-07-02](./2017/daily/17-07-02.md)
+    - [17-06-24](./2017/daily/17-06-24.md)
     - [17-06-18](./2017/daily/17-06-18.md)
+    - [17-06-17](./2017/daily/17-06-17.md)
+    - [17-06-16](./2017/daily/17-06-16.md)
+    - [17-06-15](./2017/daily/17-06-15.md)
+    - [17-06-14](./2017/daily/17-06-14.md)
 * 2016 年
   - [用Vagrant搭建运行环境](./2016/Build-Environment-by-Vagrant.md)
   - [aliyunhostlog](./2016/aliyunhostlog.md)
