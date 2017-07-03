@@ -1,5 +1,5 @@
 
-# Learning Mongodb With Python3
+# Run Mongodb in Python3
 
 ### keywords
 
@@ -137,7 +137,7 @@ content = col.find_one({'age': 23})
 
 # 排序
 
-# 更新指定的数据
+# **更新指定的数据**
   # 更新第一条匹配的数据的所有字段，未指定为空
   collection.update({'name': 'carson'}, {'age': 18})
   # 更新第一条匹配的数据的指定字段
