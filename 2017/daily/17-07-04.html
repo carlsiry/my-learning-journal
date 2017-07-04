@@ -691,27 +691,25 @@ write.writeheader()
 # &#x5199;&#x5165;&#x884C;&#x6570;&#x636E;
 write.writerows(rows_dic)
 </code></pre></li>
-<li><p>lxml &#x4F7F;&#x7528;
-```
-from lxml import html
+<li><p>lxml &#x4F7F;&#x7528;</p>
+<pre><code>from lxml import html
 import requests
 html_source = requests.get(&apos;www.baidu.com&apos;).text
-selector_object = html.fromstring(html_source)</p>
-</li>
-</ul>
-<h1 id="&#x63D0;&#x53D6;&#x6587;&#x672C;">&#x63D0;&#x53D6;&#x6587;&#x672C;</h1>
-<p>content_list = selector_object.xpath(&apos;//ui/li[@class=&quot;active&quot;]/text()&apos;)
+selector_object = html.fromstring(html_source)
+# &#x63D0;&#x53D6;&#x6587;&#x672C;
+content_list = selector_object.xpath(&apos;//ui/li[@class=&quot;active&quot;]/text()&apos;)
 content_list = selector_object.xpath(&apos;//ui/li[starts-with(@class, &quot;active&quot;)]/text()&apos;)  # starts-with
 content_list = selector_object.xpath(&apos;//ui/li[@class=&quot;active&quot;]/text()&apos;)
-content = selector.xpath(&apos;//ui/li/string(.)&apos;)</p>
-<h1 id="&#x63D0;&#x53D6;&#x5C5E;&#x6027;">&#x63D0;&#x53D6;&#x5C5E;&#x6027;</h1>
-<p>title = selector.xpath(&apos;//a/@title&apos;)</p>
-<pre><code>
-- BeautifuSoup4
-</code></pre><p>pip install beautifulsoup4
-from bs4 import BeautifuiSoup</p>
-<h1 id="beautifulsoup">BeautifulSoup()</h1>
-<p>```</p>
+content = selector.xpath(&apos;//ui/li/string(.)&apos;)
+# &#x63D0;&#x53D6;&#x5C5E;&#x6027;
+title = selector.xpath(&apos;//a/@title&apos;)
+</code></pre></li>
+<li><p>BeautifuSoup4</p>
+<pre><code>pip install beautifulsoup4
+from bs4 import BeautifuiSoup
+# BeautifulSoup()
+</code></pre></li>
+</ul>
 
                                 
                                 </section>
@@ -751,7 +749,7 @@ from bs4 import BeautifuiSoup</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"17-07-04","level":"1.2.3.1","depth":3,"next":{"title":"17-07-03","level":"1.2.3.2","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},"previous":{"title":"daily","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"17-07-04","level":"1.2.3.1","depth":3,"path":"2017/daily/17-07-04.md","ref":"./2017/daily/17-07-04.md","articles":[]},{"title":"17-07-03","level":"1.2.3.2","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},{"title":"17-07-02","level":"1.2.3.3","depth":3,"path":"2017/daily/17-07-02.md","ref":"./2017/daily/17-07-02.md","articles":[]},{"title":"17-06-24","level":"1.2.3.4","depth":3,"path":"2017/daily/17-06-24.md","ref":"./2017/daily/17-06-24.md","articles":[]},{"title":"17-06-18","level":"1.2.3.5","depth":3,"path":"2017/daily/17-06-18.md","ref":"./2017/daily/17-06-18.md","articles":[]},{"title":"17-06-17","level":"1.2.3.6","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},{"title":"17-06-16","level":"1.2.3.7","depth":3,"path":"2017/daily/17-06-16.md","ref":"./2017/daily/17-06-16.md","articles":[]},{"title":"17-06-15","level":"1.2.3.8","depth":3,"path":"2017/daily/17-06-15.md","ref":"./2017/daily/17-06-15.md","articles":[]},{"title":"17-06-14","level":"1.2.3.9","depth":3,"path":"2017/daily/17-06-14.md","ref":"./2017/daily/17-06-14.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-07-04.md","mtime":"2017-07-04T00:43:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-04T00:44:53.329Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"17-07-04","level":"1.2.3.1","depth":3,"next":{"title":"17-07-03","level":"1.2.3.2","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},"previous":{"title":"daily","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"17-07-04","level":"1.2.3.1","depth":3,"path":"2017/daily/17-07-04.md","ref":"./2017/daily/17-07-04.md","articles":[]},{"title":"17-07-03","level":"1.2.3.2","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},{"title":"17-07-02","level":"1.2.3.3","depth":3,"path":"2017/daily/17-07-02.md","ref":"./2017/daily/17-07-02.md","articles":[]},{"title":"17-06-24","level":"1.2.3.4","depth":3,"path":"2017/daily/17-06-24.md","ref":"./2017/daily/17-06-24.md","articles":[]},{"title":"17-06-18","level":"1.2.3.5","depth":3,"path":"2017/daily/17-06-18.md","ref":"./2017/daily/17-06-18.md","articles":[]},{"title":"17-06-17","level":"1.2.3.6","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},{"title":"17-06-16","level":"1.2.3.7","depth":3,"path":"2017/daily/17-06-16.md","ref":"./2017/daily/17-06-16.md","articles":[]},{"title":"17-06-15","level":"1.2.3.8","depth":3,"path":"2017/daily/17-06-15.md","ref":"./2017/daily/17-06-15.md","articles":[]},{"title":"17-06-14","level":"1.2.3.9","depth":3,"path":"2017/daily/17-06-14.md","ref":"./2017/daily/17-06-14.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-07-04.md","mtime":"2017-07-04T00:48:01.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-04T00:48:07.326Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
