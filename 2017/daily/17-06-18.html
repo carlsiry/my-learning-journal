@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>17-06-16 · GitBook</title>
+        <title>17-06-18 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="17-06-15.html" />
+    <link rel="next" href="17-06-17.html" />
     
     
-    <link rel="prev" href="17-06-17.html" />
+    <link rel="prev" href="17-06-24.html" />
     
 
     </head>
@@ -324,7 +324,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.5" data-path="17-06-18.html">
+        <li class="chapter active" data-level="1.2.3.5" data-path="17-06-18.html">
             
                 <a href="17-06-18.html">
             
@@ -350,7 +350,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3.7" data-path="17-06-16.html">
+        <li class="chapter " data-level="1.2.3.7" data-path="17-06-16.html">
             
                 <a href="17-06-16.html">
             
@@ -649,7 +649,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >17-06-16</a>
+        <a href="../.." >17-06-18</a>
     </h1>
 </div>
 
@@ -664,75 +664,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="20160616">2016.06.16</h1>
+                                <h1 id="20170618">2017.06.18</h1>
 <h2 id="learning-list">learning list</h2>
 <ul>
-<li>Angular form<ol>
-<li>&#x9690;&#x5F0F;&#x6784;&#x5EFA;&#x8868;&#x5355;&#x5BF9;&#x8C61;</li>
-<li>&#x663E;&#x5F0F;&#x6784;&#x5EFA;&#x8868;&#x5355;&#x5BF9;&#x8C61;</li>
-<li>&#x6DFB;&#x52A0;&#x9A8C;&#x8BC1;&#x5668;</li>
-<li>&#x81EA;&#x5B9A;&#x4E49;&#x9A8C;&#x8BC1;&#x5668;</li>
-</ol>
-</li>
+<li>Angular: http.request .subscribe</li>
 </ul>
-<pre><code>import { Component } from &apos;@angular/core&apos;;
-import { FormsModule, ReactiveFormsModule} from &apos;@angular/forms&apos;;
+<pre><code>import { Http, Request, Response } from &apos;@angular/forms&apos;;
 
-// FormsModule &#x4E0B;&#x63D0;&#x4F9B;&#x4E86; ngForm ngModel&#x6307;&#x4EE4;
-// ReactiveModule &#x4E0B;&#x63D0;&#x4F9B;&#x4E86; formControl NgFormGroup &#x6307;&#x4EE4;
-@NgModule({
-  declarations: [
-    ...
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
-  bootstrap: [ AppComponent]
-})
-export class AppModule {...}
-
-
-// &#x4F7F;&#x7528;&#xFF1A;&#x663E;&#x793A;&#x3001;&#x9690;&#x8BD5;
-// &#x9690;&#x8BD5; ngForm ngModel &#x9690;&#x5F0F;&#x6784;&#x5EFA;FormContro,FormGroup&#x7C7B;&#x578B;&#x7684;&#x8868;&#x5355;&#x5BF9;&#x8C61;
-@Component({
-  selector: &apos;demo-form&apos;,
-  template: `
-    &lt;form #f=ngForm&gt;
-      &lt;input type=&quot;text&quot; name=&quot;sku&quot; ngModel&gt;
-      &lt;button (ngSubmit)=&quot;onSubmit(f.value)&quot;&gt;&lt;/button&gt;
-    &lt;/form&gt;`
-})
-export class DemoForm {
-  onSubmit(value: any) {
-    console.log(&apos;you have submit: &apos;, value);
+@Component({...});
+export class ComponentName {
+  constructor(private http: Http) {
+    // 1. request
+    this.http.request(URL)
+      .subscribe((res: Response) =&gt; {
+        // 2. handler response
+        return ;
+      })
   }
 }
 
-// &#x663E;&#x5F0F; - FormBuilder &#x5E2E;&#x52A9;&#x66F4;&#x591A;&#x5B9A;&#x5236;&#x5316;&#x5730;&#x6765;&#x6784;&#x5EFA;&#x8868;&#x5355;&#x5BF9;&#x8C61;
-import { FormGroup, FormBuilder } from &apos;@angular/forms&apos;
-@Component({
-  template: `
-    &lt;form [formGroup]=&quot;myForm&quot;&gt;
-      &lt;input type=&quot;text&quot; name=&quot;sku&quot; [formControl]=&quot;myForm.controls[&apos;sku&apos;]&quot;&gt;
-      &lt;button (ngSubmit)=&quot;onSubmit(myForm.value)&quot;&gt;&lt;/button&gt;
-    &lt;/form&gt;`
-})
-class DemoFormBuilder {
-  myForm: FormGroup
-  constructor (fb: FormBuilder) {
-    this.myForm = fb.group({
-      &apos;sku&apos;: [&apos;&apos;, Validater]
-    })
-  }
-  onSubmit(value: any): void {
-    console.log(&apos;you have submit: &apos;, value);
-  }
-}
-
-// &#x6DFB;&#x52A0;&#x9A8C;&#x8BC1;
-myForm.controls[&apos;sku&apos;, Validators.required]
+// 2. Reservable.fromEvent(el.native.element, event)
+        .map(cb)
+        .filter(cb)
+        .do(cb)
 </code></pre>
                                 
                                 </section>
@@ -760,12 +714,12 @@ myForm.controls[&apos;sku&apos;, Validators.required]
 
             
                 
-                <a href="17-06-17.html" class="navigation navigation-prev " aria-label="Previous page: 17-06-17">
+                <a href="17-06-24.html" class="navigation navigation-prev " aria-label="Previous page: 17-06-24">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="17-06-15.html" class="navigation navigation-next " aria-label="Next page: 17-06-15">
+                <a href="17-06-17.html" class="navigation navigation-next " aria-label="Next page: 17-06-17">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -776,7 +730,7 @@ myForm.controls[&apos;sku&apos;, Validators.required]
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"17-06-16","level":"1.2.3.7","depth":3,"next":{"title":"17-06-15","level":"1.2.3.8","depth":3,"path":"2017/daily/17-06-15.md","ref":"./2017/daily/17-06-15.md","articles":[]},"previous":{"title":"17-06-17","level":"1.2.3.6","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-06-16.md","mtime":"2017-06-16T00:59:08.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-04T00:44:53.329Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"17-06-18","level":"1.2.3.5","depth":3,"next":{"title":"17-06-17","level":"1.2.3.6","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},"previous":{"title":"17-06-24","level":"1.2.3.4","depth":3,"path":"2017/daily/17-06-24.md","ref":"./2017/daily/17-06-24.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-06-18.md","mtime":"2017-06-18T00:59:32.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-04T00:44:53.329Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
