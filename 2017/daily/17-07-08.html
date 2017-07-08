@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>17-06-15 · GitBook</title>
+        <title>17-07-08 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="17-06-14.html" />
+    <link rel="next" href="17-07-07.html" />
     
-    
-    <link rel="prev" href="17-06-16.html" />
     
 
     </head>
@@ -272,7 +270,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.3.1" data-path="17-07-08.html">
+        <li class="chapter active" data-level="1.2.3.1" data-path="17-07-08.html">
             
                 <a href="17-07-08.html">
             
@@ -415,7 +413,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3.12" data-path="17-06-15.html">
+        <li class="chapter " data-level="1.2.3.12" data-path="17-06-15.html">
             
                 <a href="17-06-15.html">
             
@@ -701,7 +699,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >17-06-15</a>
+        <a href="../.." >17-07-08</a>
     </h1>
 </div>
 
@@ -716,77 +714,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="20170615">2017.06.15</h1>
-<h2 id="learning-list">learning list</h2>
-<ol>
-<li>semanticUI - segment</li>
-</ol>
-<pre><code>&lt;!-- &#x5782;&#x76F4;&#x7684;&#x5212;&#x5206;&#x7684; --&gt;
-.ui.segment   &#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7236;&#x5BB9;&#x5668;&#x7684;&#x6700;&#x5927;&#x5BBD;&#x5EA6;&#xFF0C;&#x6DFB;&#x52A0;&#x5916;&#x8FB9;&#x6846;&#x9634;&#x5F71;
-.ui.segment.container &#x4E00;&#x4E2A;&#x4E0A;&#x4E0B;&#x6587;&#x5BBD;&#x5EA6;&#x5BB9;&#x5668;&#x7684;&#x5C0F;&#x8282;
-.ui.raised.segment  &#x4E00;&#x4E2A;&#x6D6E;&#x73B0;&#x7A81;&#x51FA;&#x9875;&#x9762;&#x7684;&#x5C0F;&#x8282;
-.ui.stacked.segment   &#x4E00;&#x4E2A;&#x5E95;&#x90E8;&#x51FA;&#x73B0;&#x9875;&#x9762;&#x5806;&#x53E0;&#x7684;&#x5C0F;&#x8282;
-.ui.raised.stacked.segment
-.ui.tall.raise.stacked.segment &#x4E00;&#x4E2A;&#x9AD8;&#x5EA6;&#x5806;&#x53E0;&#x7684;&#x5C0F;&#x8282;
-
-.ui.piled.segment
-.ui.vertical.segment  &#x4E00;&#x4E2A;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x5316;&#x6C34;&#x5E73;&#x7EBF;&#x533A;&#x5206;&#x7684;&#x5C0F;&#x8282;
-.ui.segments&gt;ui.segment*n &#x591A;&#x8282;&#x91CC;&#x9762;&#x5206;&#x591A;&#x4E2A;&#x5C0F;&#x8282;&#x7684;&#x5927;&#x8282;
-.ui.segments&gt;ui.[color].segment*n &#x5212;&#x5206;&#x5C0F;&#x8282;&#x7684;&#x7EBF;&#x4F1A;&#x51FA;&#x73B0;&#x989C;&#x8272;
-.ui.segments&gt;ui.[[primary]/secondar].segment*n &#x6839;&#x636E;&#x91CD;&#x8981;&#x6027;&#x663E;&#x793A;&#x4E0D;&#x540C;&#x80CC;&#x666F;&#x548C;&#x5B57;&#x4F53;&#x989C;&#x8272;,primary&#x4E3A;&#x9ED8;&#x8BA4;&#x7684;&#xFF0C;&#x767D;&#x8272;
-
-&lt;!-- nested --&gt;
-.ui.segments&gt;ui.segments
-
-&lt;!-- &#x6C34;&#x5E73;&#x5212;&#x5206;&#x7684; --&gt;
-.ui.horizontal.segments&gt;ui.segment*n
-
-&lt;!-- &#x53EF;&#x4EE5;&#x6709;&#x72B6;&#x6001; --&gt;
-.ui.loading.segment
-.ui.disabled.segment
-.ui.inverted.segment
-
-&lt;!-- &#x53EF;&#x8D34;&#x9644;&#x7684; --&gt;
-.ui.top.attached.segment
-.ui.padded.segmentk
-
-&lt;!-- &#x663E;&#x793A;&#x5B9E;&#x9645;&#x5927;&#x5C0F;&#x7684;&#xFF1A;compact --&gt;
-.ui.compact.segment
-
-&lt;!-- &#x663E;&#x793A;&#x6709;&#x989C;&#x8272;&#x80CC;&#x666F;&#x7684; --&gt;
-.ui.inverted.[color].segment
-.ui.olive.inverted.segment
-
-&lt;!-- &#x5212;&#x5206;&#x900F;&#x660E;&#x5EA6;&#x7684;&#x91CD;&#x8981;&#x6027;&#x7684;&#x6709;&#x989C;&#x8272;&#x7684; --&gt;
-.ui.tertial.olive.inverted.segment
-
-&lt;!-- &#x6709;&#x5F62;&#x72B6;&#x7684;&#xFF0C;&#x6D6E;&#x52A8;&#x7684;&#xFF0C;&#x6E05;&#x9664;&#x6D6E;&#x52A8;&#x7684;&#x5C0F;&#x8282; --&gt;
-.ui.circular.segment
-.ui.floated.right.segment
-.ui.clearing.segment
-
- &lt;!-- &#x6392;&#x5217; --&gt;
- .ui.center.aligned.segment
- .ui.right.aligned.segment
-</code></pre><ol>
-<li>angular: FormControl, FormGroup</li>
-</ol>
-<pre><code>// &#x5728; NgModule&#x4E2D;&#x5BFC;&#x5165;&#x8FD9;&#x4E2A;&#x8868;&#x5355;
-import { FormsModule, ReactiveFormsModule } from &quot;@angular/core&quot;;
-@NgModule({
-  declarations: [ ... ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule
-  ]
-  bootstrap: [ app ]
+                                <h1 id="20170708">2017.07.08</h1>
+<h2 id="keywords">Keywords</h2>
+<ul>
+<li><strong>wx:setNavigationBarTitle(object)</strong></li>
+<li><strong>wx:showToast</strong></li>
+<li><strong>wx:previewImage</strong></li>
+<li><strong>[hidden=&quot;&quot;]</strong></li>
+<li><strong>touchstart</strong></li>
+<li><strong>touchend</strong></li>
+</ul>
+<h2 id="check-out">Check Out</h2>
+<ul>
+<li><p><strong>wx:setNavigationBarTitle(object)</strong>&#xFF1A;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x6807;&#x9898;</p>
+<pre><code>Page({
+onReady: function() {
+  title: this.postData.title
+}
 })
-class FormDemoAppModule { }
+</code></pre></li>
+<li><p><strong>wx:showToast</strong>&#xFF1A;&#x4EA4;&#x4E92;&#x53CD;&#x9988;
+```
+// wx.showToast
+// wx.hideToast</p>
+</li>
+</ul>
+<p>wx.showToast({
+  title: newData.collectionStatus ? &apos;&#x6536;&#x85CF;&#x6210;&#x529F;&apos; : &apos;&#x53D6;&#x6D88;&#x6210;&#x529F;&apos;,
+  duration: 1000,   // &#x52A8;&#x753B;&#x6301;&#x7EED;&#x65F6;&#x95F4;
+  icon: &quot;success&quot;, // &#x5C0F;&#x56FE;&#x6807;&#xFF0C;&#x53EF;&#x9009; success, loading
+  mask: true  // &#x900F;&#x660E;&#x8499;&#x5C42;&#xFF0C;&#x9632;&#x6B62;&#x8BEF;&#x89E6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false
+})</p>
+<pre><code>
+- **wx:previewImage**&#xFF1A;&#x9884;&#x89C8;&#x56FE;&#x7247;
+</code></pre><p>wx.previewImage({
+  current: img[imgIdx], // &#x5F53;&#x524D;&#x56FE;&#x7247;&#x7684;&#x8FDE;&#x63A5;
+  urls: imgs // &#x9700;&#x8981;&#x9884;&#x89C8;&#x7684;&#x56FE;&#x7247;http&#x8FDE;&#x63A5;
+})
+```</p>
+<ul>
+<li><p><strong>[hidden=&quot;&quot;]</strong>&#xFF1A;&#x7EC4;&#x4EF6;&#x9690;&#x85CF;&#xFF0C;&#x4F1A;&#x88AB;&#x6E32;&#x67D3;</p>
+</li>
+<li><p><strong>touchstart</strong>&#xFF1A;&#x89E6;&#x6478;&#x5F00;&#x59CB;&#xFF0C;&#x8BED;&#x97F3;&#x5F00;&#x59CB;</p>
+</li>
+<li><strong>touchend</strong>&#xFF1A;&#x89E6;&#x6478;&#x7ED3;&#x675F;&#xFF0C;&#x8BED;&#x97F3;&#x7ED3;&#x675F;</li>
+</ul>
 
-myForm = new FormControl({name: &apos;..&apos;});
-myInfo = new FormGroup({..},{..});
-</code></pre>
                                 
                                 </section>
                             
@@ -813,12 +786,8 @@ myInfo = new FormGroup({..},{..});
 
             
                 
-                <a href="17-06-16.html" class="navigation navigation-prev " aria-label="Previous page: 17-06-16">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="17-06-14.html" class="navigation navigation-next " aria-label="Next page: 17-06-14">
+                <a href="17-07-07.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 17-07-07">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -829,7 +798,7 @@ myInfo = new FormGroup({..},{..});
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"17-06-15","level":"1.2.3.12","depth":3,"next":{"title":"17-06-14","level":"1.2.3.13","depth":3,"path":"2017/daily/17-06-14.md","ref":"./2017/daily/17-06-14.md","articles":[]},"previous":{"title":"17-06-16","level":"1.2.3.11","depth":3,"path":"2017/daily/17-06-16.md","ref":"./2017/daily/17-06-16.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-06-15.md","mtime":"2017-06-15T11:55:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-08T01:32:36.188Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"17-07-08","level":"1.2.3.1","depth":3,"next":{"title":"17-07-07","level":"1.2.3.2","depth":3,"path":"2017/daily/17-07-07.md","ref":"./2017/daily/17-07-07.md","articles":[]},"previous":{"title":"daily","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"17-07-08","level":"1.2.3.1","depth":3,"path":"2017/daily/17-07-08.md","ref":"./2017/daily/17-07-08.md","articles":[]},{"title":"17-07-07","level":"1.2.3.2","depth":3,"path":"2017/daily/17-07-07.md","ref":"./2017/daily/17-07-07.md","articles":[]},{"title":"17-07-06","level":"1.2.3.3","depth":3,"path":"2017/daily/17-07-06.md","ref":"./2017/daily/17-07-06.md","articles":[]},{"title":"17-07-05","level":"1.2.3.4","depth":3,"path":"2017/daily/17-07-05.md","ref":"./2017/daily/17-07-05.md","articles":[]},{"title":"17-07-04","level":"1.2.3.5","depth":3,"path":"2017/daily/17-07-04.md","ref":"./2017/daily/17-07-04.md","articles":[]},{"title":"17-07-03","level":"1.2.3.6","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},{"title":"17-07-02","level":"1.2.3.7","depth":3,"path":"2017/daily/17-07-02.md","ref":"./2017/daily/17-07-02.md","articles":[]},{"title":"17-06-24","level":"1.2.3.8","depth":3,"path":"2017/daily/17-06-24.md","ref":"./2017/daily/17-06-24.md","articles":[]},{"title":"17-06-18","level":"1.2.3.9","depth":3,"path":"2017/daily/17-06-18.md","ref":"./2017/daily/17-06-18.md","articles":[]},{"title":"17-06-17","level":"1.2.3.10","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},{"title":"17-06-16","level":"1.2.3.11","depth":3,"path":"2017/daily/17-06-16.md","ref":"./2017/daily/17-06-16.md","articles":[]},{"title":"17-06-15","level":"1.2.3.12","depth":3,"path":"2017/daily/17-06-15.md","ref":"./2017/daily/17-06-15.md","articles":[]},{"title":"17-06-14","level":"1.2.3.13","depth":3,"path":"2017/daily/17-06-14.md","ref":"./2017/daily/17-06-14.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-07-08.md","mtime":"2017-07-08T01:32:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-07-08T01:32:36.188Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
