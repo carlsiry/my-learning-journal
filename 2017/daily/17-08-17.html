@@ -829,10 +829,10 @@
       accept-charset=&quot;UTF-8&quot;
       ectype=&quot;application/x-www-form-urlencoded&quot;
       autocomplete=&quot;off&quot; novalidate&gt;
-  &#x8868;&#x5355;&#x5143;&#x7D20;&#x5185;&#x5BB9;
+  &lt;!-- &#x8868;&#x5355;&#x5143;&#x7D20;&#x5185;&#x5BB9; --&gt;
 &lt;/form&gt;
 
-&#x4F7F;&#x7528; button &#x6765;&#x63A7;&#x5236; &#x63D0;&#x4EA4;
+&lt;!-- &#x4F7F;&#x7528; button &#x6765;&#x63A7;&#x5236; &#x63D0;&#x4EA4; --&gt;
 &lt;form action=&quot;https://www.baidu.com/s&quot; id=&quot;myForm&quot;&gt;
   &lt;input type=&quot;text &quot; name=&quot;word&quot;&gt;
   &lt;input type=&quot;button&quot; value=&quot;&#x63D0;&#x4EA4;&quot; onclick=&quot;toSubmit()&quot;&gt;
@@ -851,7 +851,7 @@ function toReset() {
 </ul>
 <p>&#x5728;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x83B7;&#x53D6;&#x8868;&#x5355;&#x5BF9;&#x8C61;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6709;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;</p>
 <ol>
-<li>document.forms[&apos;yourFormName&apos;] &#x6839;&#x636E;form&#x7684;name&#x5C5E;&#x6027;&#x6765;&#x83B7;&#x53D6;&#x3002;
+<li><code>document.forms[&apos;yourFormName&apos;]</code> &#x6839;&#x636E;form&#x7684;name&#x5C5E;&#x6027;&#x6765;&#x83B7;&#x53D6;&#x3002;
 &#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x6839;&#x636E;form&#x7684;name&#x5C5E;&#x6027;&#x6765;&#x83B7;&#x53D6;&#x8868;&#x5355;&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
@@ -862,7 +862,7 @@ var form = document.forms[&apos;testForm&apos;];
 &lt;input type=&quot;button&quot; value=&quot;Test&quot; onclick=&quot;onTestButtonClick()&quot;&gt;
 &lt;/form&gt;
 </code></pre></li>
-<li>document.forms[0] &#x6839;&#x636E;form&#x5728;&#x6574;&#x4E2A;html&#x6587;&#x6863;&#x4E2D;&#x7684;form&#x7684;&#x6570;&#x91CF;&#x4F4D;&#x7F6E;&#x4E0B;&#x6807;&#x6765;&#x83B7;&#x53D6;&#x3002;
+<li><code>document.forms[0]</code> &#x6839;&#x636E;form&#x5728;&#x6574;&#x4E2A;html&#x6587;&#x6863;&#x4E2D;&#x7684;form&#x7684;&#x6570;&#x91CF;&#x4F4D;&#x7F6E;&#x4E0B;&#x6807;&#x6765;&#x83B7;&#x53D6;&#x3002;
 &#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x6839;&#x636E;form&#x5728;&#x6574;&#x4E2A;html&#x6587;&#x6863;&#x4E2D;&#x7684;form&#x7684;&#x6570;&#x91CF;&#x4F4D;&#x7F6E;&#x4E0B;&#x6807;&#x6765;&#x83B7;&#x53D6;&#x8868;&#x5355;&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
@@ -875,9 +875,8 @@ var form = document.forms[0];
 &lt;input type=&quot;button&quot; value=&quot;Test&quot; onclick=&quot;onTestButtonClick()&quot;&gt;
 &lt;/form&gt;
 </code></pre></li>
-<li><p>document.getElementById(&apos;yourFormId&apos;) &#x6839;&#x636E;form&#x7684;id&#x6765;&#x83B7;&#x53D6;&#x3002;
-&#x793A;&#x4F8B;&#xFF1A;</p>
-<pre><code>&lt;title&gt;&#x6839;&#x636E;form&#x7684;id&#x6765;&#x83B7;&#x53D6;&#x8868;&#x5355;&lt;/title&gt;
+<li><code>document.getElementById(&apos;yourFormId&apos;)</code> &#x6839;&#x636E;form&#x7684;id&#x6765;&#x83B7;&#x53D6;&#x3002;
+&#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x6839;&#x636E;form&#x7684;id&#x6765;&#x83B7;&#x53D6;&#x8868;&#x5355;&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
 var form = document.getElementById(&apos;testFormId&apos;);
@@ -888,13 +887,13 @@ var form = document.getElementById(&apos;testFormId&apos;);
 &lt;form id=&quot;testFormId&quot;&gt;
 &lt;input type=&quot;button&quot; value=&quot;Test&quot; onclick=&quot;onTestButtonClick()&quot;&gt;
 &lt;/form&gt;
-</code></pre><ul>
-<li>&#x83B7;&#x53D6;&#x8868;&#x5355;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;</li>
-</ul>
-</li>
-<li><p>document.getElementById(&apos;yourElementId&apos;) &#x6839;&#x636E;form&#x4E2D;&#x5143;&#x7D20;&#x7684;id&#x83B7;&#x53D6;&#x3002;
-&#x793A;&#x4F8B;&#xFF1A;</p>
-<pre><code>&lt;title&gt;&#x6839;&#x636E;form&#x4E2D;&#x5143;&#x7D20;&#x7684;id&lt;/title&gt;
+</code></pre></li>
+</ol>
+<ul>
+<li><p>&#x83B7;&#x53D6;&#x8868;&#x5355;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x6CD5;</p>
+<ol>
+<li><code>document.getElementById(&apos;yourElementId&apos;)</code> &#x6839;&#x636E;form&#x4E2D;&#x5143;&#x7D20;&#x7684;id&#x83B7;&#x53D6;&#x3002;
+&#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x6839;&#x636E;form&#x4E2D;&#x5143;&#x7D20;&#x7684;id&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
 var usernameText = document.getElementById(&apos;username&apos;)
@@ -907,7 +906,7 @@ var usernameText = document.getElementById(&apos;username&apos;)
 &lt;input type=&quot;button&quot; value=&quot;Test&quot; onclick=&quot;onTestButtonClick()&quot;&gt;
 &lt;/form&gt;
 </code></pre></li>
-<li>youForm.yourElementName &#x901A;&#x8FC7;form&#x4E2D;&#x5143;&#x7D20;&#x7684;name&#x83B7;&#x53D6;&#x3002;
+<li><code>youForm.yourElementName</code> &#x901A;&#x8FC7;form&#x4E2D;&#x5143;&#x7D20;&#x7684;name&#x83B7;&#x53D6;&#x3002;
 &#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x901A;&#x8FC7;form&#x4E2D;&#x5143;&#x7D20;&#x7684;name&#x83B7;&#x53D6;&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
@@ -921,7 +920,7 @@ var usernameText = testForm.username;
 &lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;
 &lt;input type=&quot;button&quot; value=&quot;Test&quot; onclick=&quot;onTestButtonClick()&quot;&gt;
 &lt;/form&gt;
-</code></pre>3, yourForm.elements[elementIndex] &#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x5728;form&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x4E0B;&#x6807;&#x6765;&#x83B7;&#x53D6;&#x3002;
+</code></pre>3, <code>yourForm.elements[elementIndex]</code> &#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x5728;form&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x4E0B;&#x6807;&#x6765;&#x83B7;&#x53D6;&#x3002;
 &#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x5728;form&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#x4E0B;&#x6807;&#x6765;&#x83B7;&#x53D6;&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
@@ -934,8 +933,8 @@ var usernameText = testForm.elements[0];
 &lt;input type=&quot;button&quot; value=&quot;Test&quot; onclick=&quot;onTestButtonClick()&quot;&gt;
 &lt;/form&gt;
 </code></pre></li>
-<li>yourForm.elements[&apos;yourElementName&apos;] &#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x83B7;&#x53D6;&#x3002;
-&#x793A;&#x4F8B;&#xFF1A;<pre><code>&lt;title&gt;&#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x83B7;&#x53D6;&lt;/title&gt;
+<li><code>yourForm.elements[&apos;yourElementName&apos;]</code> &#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x83B7;&#x53D6;&#x3002;
+&#x793A;&#x4F8B;:<pre><code>&lt;title&gt;&#x901A;&#x8FC7;form&#x7684;elements&#x5C5E;&#x6027;&#x548C;&#x5143;&#x7D20;&#x540D;&#x79F0;&#x83B7;&#x53D6;&lt;/title&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 function onTestButtonClick() {
 var testForm = document.getElementById(&apos;testForm&apos;);
@@ -948,6 +947,8 @@ var usernameText = testForm.elements[&apos;username&apos;];
 &lt;/form&gt;
 </code></pre></li>
 </ol>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -987,7 +988,7 @@ var usernameText = testForm.elements[&apos;username&apos;];
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"17-08-17","level":"1.2.3.1","depth":3,"next":{"title":"17-08-16","level":"1.2.3.2","depth":3,"path":"2017/daily/17-08-16.md","ref":"./2017/daily/17-08-16.md","articles":[]},"previous":{"title":"daily","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"17-08-17","level":"1.2.3.1","depth":3,"path":"2017/daily/17-08-17.md","ref":"./2017/daily/17-08-17.md","articles":[]},{"title":"17-08-16","level":"1.2.3.2","depth":3,"path":"2017/daily/17-08-16.md","ref":"./2017/daily/17-08-16.md","articles":[]},{"title":"17-08-15","level":"1.2.3.3","depth":3,"path":"2017/daily/17-08-15.md","ref":"./2017/daily/17-08-15.md","articles":[]},{"title":"17-08-14","level":"1.2.3.4","depth":3,"path":"2017/daily/17-08-14.md","ref":"./2017/daily/17-08-14.md","articles":[]},{"title":"17-08-13","level":"1.2.3.5","depth":3,"path":"2017/daily/17-08-13.md","ref":"./2017/daily/17-08-13.md","articles":[]},{"title":"17-07-26","level":"1.2.3.6","depth":3,"path":"2017/daily/17-07-26.md","ref":"./2017/daily/17-07-26.md","articles":[]},{"title":"17-07-25","level":"1.2.3.7","depth":3,"path":"2017/daily/17-07-25.md","ref":"./2017/daily/17-07-25.md","articles":[]},{"title":"17-07-08","level":"1.2.3.8","depth":3,"path":"2017/daily/17-07-08.md","ref":"./2017/daily/17-07-08.md","articles":[]},{"title":"17-07-07","level":"1.2.3.9","depth":3,"path":"2017/daily/17-07-07.md","ref":"./2017/daily/17-07-07.md","articles":[]},{"title":"17-07-06","level":"1.2.3.10","depth":3,"path":"2017/daily/17-07-06.md","ref":"./2017/daily/17-07-06.md","articles":[]},{"title":"17-07-05","level":"1.2.3.11","depth":3,"path":"2017/daily/17-07-05.md","ref":"./2017/daily/17-07-05.md","articles":[]},{"title":"17-07-04","level":"1.2.3.12","depth":3,"path":"2017/daily/17-07-04.md","ref":"./2017/daily/17-07-04.md","articles":[]},{"title":"17-07-03","level":"1.2.3.13","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},{"title":"17-07-02","level":"1.2.3.14","depth":3,"path":"2017/daily/17-07-02.md","ref":"./2017/daily/17-07-02.md","articles":[]},{"title":"17-06-24","level":"1.2.3.15","depth":3,"path":"2017/daily/17-06-24.md","ref":"./2017/daily/17-06-24.md","articles":[]},{"title":"17-06-18","level":"1.2.3.16","depth":3,"path":"2017/daily/17-06-18.md","ref":"./2017/daily/17-06-18.md","articles":[]},{"title":"17-06-17","level":"1.2.3.17","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},{"title":"17-06-16","level":"1.2.3.18","depth":3,"path":"2017/daily/17-06-16.md","ref":"./2017/daily/17-06-16.md","articles":[]},{"title":"17-06-15","level":"1.2.3.19","depth":3,"path":"2017/daily/17-06-15.md","ref":"./2017/daily/17-06-15.md","articles":[]},{"title":"17-06-14","level":"1.2.3.20","depth":3,"path":"2017/daily/17-06-14.md","ref":"./2017/daily/17-06-14.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-08-17.md","mtime":"2017-08-17T04:12:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T04:12:41.809Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"17-08-17","level":"1.2.3.1","depth":3,"next":{"title":"17-08-16","level":"1.2.3.2","depth":3,"path":"2017/daily/17-08-16.md","ref":"./2017/daily/17-08-16.md","articles":[]},"previous":{"title":"daily","level":"1.2.3","depth":2,"ref":"","articles":[{"title":"17-08-17","level":"1.2.3.1","depth":3,"path":"2017/daily/17-08-17.md","ref":"./2017/daily/17-08-17.md","articles":[]},{"title":"17-08-16","level":"1.2.3.2","depth":3,"path":"2017/daily/17-08-16.md","ref":"./2017/daily/17-08-16.md","articles":[]},{"title":"17-08-15","level":"1.2.3.3","depth":3,"path":"2017/daily/17-08-15.md","ref":"./2017/daily/17-08-15.md","articles":[]},{"title":"17-08-14","level":"1.2.3.4","depth":3,"path":"2017/daily/17-08-14.md","ref":"./2017/daily/17-08-14.md","articles":[]},{"title":"17-08-13","level":"1.2.3.5","depth":3,"path":"2017/daily/17-08-13.md","ref":"./2017/daily/17-08-13.md","articles":[]},{"title":"17-07-26","level":"1.2.3.6","depth":3,"path":"2017/daily/17-07-26.md","ref":"./2017/daily/17-07-26.md","articles":[]},{"title":"17-07-25","level":"1.2.3.7","depth":3,"path":"2017/daily/17-07-25.md","ref":"./2017/daily/17-07-25.md","articles":[]},{"title":"17-07-08","level":"1.2.3.8","depth":3,"path":"2017/daily/17-07-08.md","ref":"./2017/daily/17-07-08.md","articles":[]},{"title":"17-07-07","level":"1.2.3.9","depth":3,"path":"2017/daily/17-07-07.md","ref":"./2017/daily/17-07-07.md","articles":[]},{"title":"17-07-06","level":"1.2.3.10","depth":3,"path":"2017/daily/17-07-06.md","ref":"./2017/daily/17-07-06.md","articles":[]},{"title":"17-07-05","level":"1.2.3.11","depth":3,"path":"2017/daily/17-07-05.md","ref":"./2017/daily/17-07-05.md","articles":[]},{"title":"17-07-04","level":"1.2.3.12","depth":3,"path":"2017/daily/17-07-04.md","ref":"./2017/daily/17-07-04.md","articles":[]},{"title":"17-07-03","level":"1.2.3.13","depth":3,"path":"2017/daily/17-07-03.md","ref":"./2017/daily/17-07-03.md","articles":[]},{"title":"17-07-02","level":"1.2.3.14","depth":3,"path":"2017/daily/17-07-02.md","ref":"./2017/daily/17-07-02.md","articles":[]},{"title":"17-06-24","level":"1.2.3.15","depth":3,"path":"2017/daily/17-06-24.md","ref":"./2017/daily/17-06-24.md","articles":[]},{"title":"17-06-18","level":"1.2.3.16","depth":3,"path":"2017/daily/17-06-18.md","ref":"./2017/daily/17-06-18.md","articles":[]},{"title":"17-06-17","level":"1.2.3.17","depth":3,"path":"2017/daily/17-06-17.md","ref":"./2017/daily/17-06-17.md","articles":[]},{"title":"17-06-16","level":"1.2.3.18","depth":3,"path":"2017/daily/17-06-16.md","ref":"./2017/daily/17-06-16.md","articles":[]},{"title":"17-06-15","level":"1.2.3.19","depth":3,"path":"2017/daily/17-06-15.md","ref":"./2017/daily/17-06-15.md","articles":[]},{"title":"17-06-14","level":"1.2.3.20","depth":3,"path":"2017/daily/17-06-14.md","ref":"./2017/daily/17-06-14.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-08-17.md","mtime":"2017-08-17T04:17:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T04:17:14.333Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
