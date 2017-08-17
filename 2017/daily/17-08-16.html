@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>17-07-08 · GitBook</title>
+        <title>17-08-16 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="17-07-07.html" />
+    <link rel="next" href="17-08-15.html" />
     
     
-    <link rel="prev" href="17-07-25.html" />
+    <link rel="prev" href="17-08-17.html" />
     
 
     </head>
@@ -298,7 +298,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3.2" data-path="17-08-16.html">
+        <li class="chapter active" data-level="1.2.3.2" data-path="17-08-16.html">
             
                 <a href="17-08-16.html">
             
@@ -376,7 +376,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.3.8" data-path="17-07-08.html">
+        <li class="chapter " data-level="1.2.3.8" data-path="17-07-08.html">
             
                 <a href="17-07-08.html">
             
@@ -805,7 +805,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >17-07-08</a>
+        <a href="../.." >17-08-16</a>
     </h1>
 </div>
 
@@ -820,50 +820,72 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="20170708">2017.07.08</h1>
-<h2 id="keywords">Keywords</h2>
+                                <h1 id="20170816">2017.08.16</h1>
+<h2 id="new">New</h2>
 <ul>
-<li><strong>wx:setNavigationBarTitle(object)</strong></li>
-<li><strong>wx:showToast</strong></li>
-<li><strong>wx:previewImage</strong></li>
-<li><strong>[hidden=&quot;&quot;]</strong></li>
-<li><strong>touchstart</strong></li>
-<li><strong>touchend</strong></li>
+<li>HTML&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x3001;DOM0&#x7EA7;&#x3001;DOM2&#x7EA7;</li>
 </ul>
-<h2 id="check-out">Check Out</h2>
 <ul>
-<li><p><strong>wx:setNavigationBarTitle(object)</strong>&#xFF1A;&#x52A8;&#x6001;&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x6807;&#x9898;</p>
-<pre><code>Page({
-onReady: function() {
-  title: this.postData.title
-}
-})
+<li>IE &#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;<pre><code>// &#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#xFF1A; attachEvent(eventName, handlerFun)
+node.attachEvent(&apos;onclick&apos;, function() { return this==window});
+// &#x79FB;&#x9664;&#x4E8B;&#x4EF6;&#xFF1A; detachEvent(eventName, handlerFun)
 </code></pre></li>
-<li><p><strong>wx:showToast</strong>&#xFF1A;&#x4EA4;&#x4E92;&#x53CD;&#x9988;
-```
-// wx.showToast
-// wx.hideToast</p>
+<li><p>&#x8DE8;&#x6D4F;&#x89C8;&#x5668;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<pre><code>// &#x7ED1;&#x5B9A;&#x4E8B;&#x4EF6;
+function addHandler() {
+if(el.addEventListener) {
+  el.addEventListener(&apos;click&apos;, handler, false); // &#x4E8B;&#x4EF6;&#x5192;&#x6CE1;&#xFF0C; IE9 &#x548C;&#x5927;&#x90E8;&#x5206;&#x65B0;&#x6D4F;&#x89C8;&#x5668;
+} else if(el.attachEvent) {
+  el.attachEvent(&apos;onclick&apos;, handler); // IE
+} else {
+  el.onclick = handler; // DOM0 &#x7EA7;&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;&#xFF1A; &#x652F;&#x6301;&#x6240;&#x6709;&#x6D4F;&#x89C8;&#x5668;
+}
+}
+// &#x79FB;&#x9664;&#x4E8B;&#x4EF6;
+function removeHandler() {
+if(el.removeEventListener) {
+  el.removeEventListener(&apos;click&apos;, handler, false);
+} else if (el.detachEvent) {
+  el.detachEvent(&apos;onclick&apos;, handler);
+} else {
+  el.onclick = null;
+}
+}
+</code></pre></li>
+<li><p>DOM &#x548C; IE&#x4E2D;&#x7684; event &#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x4E0D;&#x4E00;&#x81F4;</p>
 </li>
-</ul>
-<p>wx.showToast({
-  title: newData.collectionStatus ? &apos;&#x6536;&#x85CF;&#x6210;&#x529F;&apos; : &apos;&#x53D6;&#x6D88;&#x6210;&#x529F;&apos;,
-  duration: 1000,   // &#x52A8;&#x753B;&#x6301;&#x7EED;&#x65F6;&#x95F4;
-  icon: &quot;success&quot;, // &#x5C0F;&#x56FE;&#x6807;&#xFF0C;&#x53EF;&#x9009; success, loading
-  mask: true  // &#x900F;&#x660E;&#x8499;&#x5C42;&#xFF0C;&#x9632;&#x6B62;&#x8BEF;&#x89E6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; false
-})</p>
-<pre><code>
-- **wx:previewImage**&#xFF1A;&#x9884;&#x89C8;&#x56FE;&#x7247;
-</code></pre><p>wx.previewImage({
-  current: img[imgIdx], // &#x5F53;&#x524D;&#x56FE;&#x7247;&#x7684;&#x8FDE;&#x63A5;
-  urls: imgs // &#x9700;&#x8981;&#x9884;&#x89C8;&#x7684;&#x56FE;&#x7247;http&#x8FDE;&#x63A5;
-})
-```</p>
-<ul>
-<li><p><strong>[hidden=&quot;&quot;]</strong>&#xFF1A;&#x7EC4;&#x4EF6;&#x9690;&#x85CF;&#xFF0C;&#x4F1A;&#x88AB;&#x6E32;&#x67D3;</p>
-</li>
-<li><p><strong>touchstart</strong>&#xFF1A;&#x89E6;&#x6478;&#x5F00;&#x59CB;&#xFF0C;&#x8BED;&#x97F3;&#x5F00;&#x59CB;</p>
-</li>
-<li><strong>touchend</strong>&#xFF1A;&#x89E6;&#x6478;&#x7ED3;&#x675F;&#xFF0C;&#x8BED;&#x97F3;&#x7ED3;&#x675F;</li>
+<li><p>IE &#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x5E38;&#x89C1;&#x5C5E;&#x6027;</p>
+<pre><code>event.srcElement (event.target)
+event.type
+event.returnValue&#xFF1A; &#x53D6;&#x6D88;&#x4E8B;&#x4EF6;&#x7684;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; true ( event.preventDefault() )
+event.cancelBubble&#xFF1A;&#x53D6;&#x6D88;&#x4E8B;&#x4EF6;&#x7684;&#x5192;&#x6CE1;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;false ( event.stopPropagation() )
+</code></pre></li>
+<li><p>&#x8DE8;&#x6D4F;&#x89C8;&#x5668;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<pre><code>// 1. &#x83B7;&#x53D6;&#x4E0D;&#x540C;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x4E8B;&#x4EF6;&#x5BF9;&#x8C61;
+function getEvent(event) {
+return event ? event : window.event;
+}
+// 2. &#x83B7;&#x53D6;&#x76EE;&#x6807;&#x5BF9;&#x8C61;
+functin getTarget(event) {
+return event.target || event.srcElement;
+}
+// 3. &#x963B;&#x6B62;&#x9ED8;&#x8BA4;&#x884C;&#x4E3A;
+function preventDefault(event) {
+if (event.preventDefault) {
+  event.preventDefault()
+} else {
+  event.returnValue = false;
+}
+}
+// 4. &#x963B;&#x6B62;&#x4E8B;&#x4EF6;&#x5192;&#x6CE1;
+function stopPropagation(event) {
+if (event.stopPropagation) {
+  event.stopPropagation()
+} else {
+  event.cancelBubble = true;
+}
+}
+</code></pre></li>
 </ul>
 
                                 
@@ -892,12 +914,12 @@ onReady: function() {
 
             
                 
-                <a href="17-07-25.html" class="navigation navigation-prev " aria-label="Previous page: 17-07-25">
+                <a href="17-08-17.html" class="navigation navigation-prev " aria-label="Previous page: 17-08-17">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="17-07-07.html" class="navigation navigation-next " aria-label="Next page: 17-07-07">
+                <a href="17-08-15.html" class="navigation navigation-next " aria-label="Next page: 17-08-15">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -908,7 +930,7 @@ onReady: function() {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"17-07-08","level":"1.2.3.8","depth":3,"next":{"title":"17-07-07","level":"1.2.3.9","depth":3,"path":"2017/daily/17-07-07.md","ref":"./2017/daily/17-07-07.md","articles":[]},"previous":{"title":"17-07-25","level":"1.2.3.7","depth":3,"path":"2017/daily/17-07-25.md","ref":"./2017/daily/17-07-25.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-07-08.md","mtime":"2017-07-08T01:32:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T04:07:22.025Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"17-08-16","level":"1.2.3.2","depth":3,"next":{"title":"17-08-15","level":"1.2.3.3","depth":3,"path":"2017/daily/17-08-15.md","ref":"./2017/daily/17-08-15.md","articles":[]},"previous":{"title":"17-08-17","level":"1.2.3.1","depth":3,"path":"2017/daily/17-08-17.md","ref":"./2017/daily/17-08-17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"COVER.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2017/daily/17-08-16.md","mtime":"2017-08-16T11:33:37.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-17T04:07:22.025Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
