@@ -6,6 +6,7 @@
     - [plans](./2017/07/plans.md)
     - [tmp](./2017/07/tmp.md)
     - [run-mongodb-in-py3](./2017/07/run-mongodb-in-py3.md)
+    - [flask-action-project](./2017/07/flask-action-project.md)
   * 06 月
     - [fundation](./2017/06/fundation.md)
     - [ng-frist](./2017/06/ng-frist.md)
@@ -13,6 +14,14 @@
     - [reset_css_explain.md](./2017/06/reset_css_explain.md)
     - [semantic](./2017/06/semantic.md)
   * daily
+    - [17-08-20](./2017/daily/17-08-20.md)
+    - [17-08-17](./2017/daily/17-08-17.md)
+    - [17-08-16](./2017/daily/17-08-16.md)
+    - [17-08-15](./2017/daily/17-08-15.md)
+    - [17-08-14](./2017/daily/17-08-14.md)
+    - [17-08-13](./2017/daily/17-08-13.md)
+    - [17-07-26](./2017/daily/17-07-26.md)
+    - [17-07-25](./2017/daily/17-07-25.md)
     - [17-07-08](./2017/daily/17-07-08.md)
     - [17-07-07](./2017/daily/17-07-07.md)
     - [17-07-06](./2017/daily/17-07-06.md)
