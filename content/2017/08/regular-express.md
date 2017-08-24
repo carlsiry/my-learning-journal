@@ -48,9 +48,18 @@ re.test(str);   // true
 
 4. 实例属性: **global、ignoreCase、lastIndex、multiline、source**
 
+```js
+var re = /test/g;
+re.global // true
+re.ignoreCase // false
+re.lastIndex // 0
+re.mulitline // false
+re.source // 'test'
+```
+
 5. 实例方法
 
-- exec(str) => [str, ?(group)+, (index, input)] || null
+- exec(str) => [result, ?(group)+, (index:pos, input:str)] || null
 
 ```js
 var str = 'Welcome to China!';
@@ -109,6 +118,11 @@ if (re.test(str)) {
     RegExp.$1 === ' '
 
     // RegExp.multiline === false;  // 2017.08.22 chrome版本 60.0.3112.101 => undefined
-
 }
+```
+
+```js
+var re = /(\d{3}).*(\d{3})/;
+var str = 'abc123abcdef1234';
+var str.replace(re, '$2'); // 'abc234'
 ```
