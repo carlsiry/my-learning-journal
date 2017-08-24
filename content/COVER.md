@@ -23,7 +23,8 @@
     - [reset_css_explain](./2017/06/reset_css_explain.html)
     - [semantic](./2017/06/semantic.html)
   - daily
-    - [17-08-22](./2017/daily/17-08-22.md)
+    - [17-08-24](./2017/daily/17-08-22.html)
+    - [17-08-22](./2017/daily/17-08-22.html)
     - [17-08-20](./2017/daily/17-08-20.html)
     - [17-08-17](./2017/daily/17-08-17.html)
     - [17-08-16](./2017/daily/17-08-16.html)
