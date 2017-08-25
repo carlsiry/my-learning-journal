@@ -2,7 +2,7 @@
 
 # 正则表达式
 
-1. 创建正则表达式的两种方式：字面量形式、 **RegExp** 构造函数
+## 创建正则表达式的两种方式：字面量形式、 **RegExp** 构造函数
 
 ```js
 var expression = /pattern/flags;  // 类 Perl 的语法
@@ -12,7 +12,7 @@ var expression = new RegExp("[a-z]", "gm");
 **注意**：**ES3** 中，字面量形式创建的实例，其属性是不可重置的。所以，对其再次声明并使用其实是原实例，并从上次搜索位置继续匹配。
 **ES5** 开始用法跟构造函数方式完全相同（兼容性：IE9+）。
 
-2. 修饰模式 —— flags
+## 修饰模式 —— flags
 
 g : global、 i : case-insensitive、 m : mulitline、
 
@@ -28,7 +28,9 @@ bar.replace(re_f_m, '0');  // '0 \n carl'
 bar.replace(re_f_mg, '0'); // '0 \n 0'
 ```
 
-3. **元字符** : 在正则表达式中有着特殊用途的14个字符（ **`.*?\|$+^()[]{}`** ）。如果需要匹配这些字符，必需进行转义。
+## **元字符**
+
+在正则表达式中有着特殊用途的14个字符（ **`.*?\|$+^()[]{}`** ）。如果需要匹配这些字符，必需进行转义。
 
 ```js
 var str = '\\.html';  // '\.html' : string 中， '.' 号是正常字符
@@ -46,7 +48,9 @@ var str = '\\xml';
 re.test(str);   // true
 ```
 
-4. 实例属性: **global、ignoreCase、lastIndex、multiline、source**
+## 实例属性
+
+**global、ignoreCase、lastIndex、multiline、source**
 
 ```js
 var re = /test/g;
@@ -57,7 +61,7 @@ re.mulitline // false
 re.source // 'test'
 ```
 
-5. 实例方法
+## 实例方法
 
 - exec(str) => [result, ?(group)+, (index:pos, input:str)] || null
 
@@ -95,7 +99,9 @@ re.compile('[a-z]+');
 re.valueOf(); // /[a-z]+/
 ```
 
-6. 构造函数属性（相当于静态属性）：随着最近一次的模式匹配结果而变化
+## 构造函数属性（相当于静态属性）
+
+随着最近一次的模式匹配结果而变化
 
 ```js
 var str = 'Welcome to China!';
