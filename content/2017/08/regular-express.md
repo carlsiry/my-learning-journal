@@ -132,3 +132,15 @@ var re = /(\d{3}).*(\d{3})/;
 var str = 'abc123abcdef1234';
 var str.replace(re, '$2'); // 'abc234'
 ```
+
+### 2017.08.26
+
+- 连字符命名转换小驼峰（camelize）
+
+```js
+let camelize = function(str) {
+    return str.replace(/-+(.)?/g, (match, chr) => {
+        return chr ? chr.toUpperCase() : ''
+    });
+};
+```
