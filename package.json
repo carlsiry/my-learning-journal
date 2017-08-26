@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/littlecarson/my-learning-journal.git"
+    "url": "git+https://github.com/carlsiry/my-learning-journal.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/littlecarson/my-learning-journal/issues"
+    "url": "https://github.com/carlsiry/my-learning-journal/issues"
   },
-  "homepage": "https://github.com/littlecarson/my-learning-journal#readme",
+  "homepage": "https://github.com/carlsiry/my-learning-journal#readme",
   "dependencies": {
     "gh-pages": "^1.0.0"
   }
