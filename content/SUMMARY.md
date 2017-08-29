@@ -16,6 +16,8 @@
     - [reset_css_explain.md](./2017/06/reset_css_explain.md)
     - [semantic](./2017/06/semantic.md)
   * daily
+    - [17-08-29](./2017/daily/17-08-29.md)
+    - [17-08-28](./2017/daily/17-08-28.md)
     - [17-08-27](./2017/daily/17-08-27.md)
     - [17-08-26](./2017/daily/17-08-26.md)
     - [17-08-25](./2017/daily/17-08-25.md)
