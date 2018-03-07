@@ -11,6 +11,7 @@
   - [Docker从入门到实践](http://docker_practice.gitee.io)
 - 2018 年
   - daily
+    - [18-03-06](./2018/daily/18-03-06.html)
     - [18-03-05](./2018/daily/18-03-05.html)
     - [18-01-18](./2018/daily/18-01-18.html)
 - 2017 年
